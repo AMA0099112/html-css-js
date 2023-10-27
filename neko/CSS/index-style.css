@@ -1,0 +1,50 @@
+body {
+    background-image: url('../img/首頁底圖.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(141, 190, 215, 0.5);
+    background-blend-mode: multiply;
+}
+
+
+
+.title {
+    width: 50%;
+    display: block;
+    margin: 1% auto;
+    margin-bottom: 0;
+}
+
+.intro {
+    display: block;
+    background-color: white;
+    border: 5px solid #f1ff77e4;
+    border-color: rgb(245, 231, 154);
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 1%;
+    text-align: center;
+}
+
+.start {
+    display: block;
+    background-color: pink;
+    width: 10%;
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 15px;
+
+}
+
+/*字體*/
+.intro {
+    font-size: 1.5em;
+}
+
+.start {
+    font-size: 2em;
+
+}
