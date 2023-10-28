@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
     $("#refregi").hover(function(){
-        $("#open-refregi").css("display", "block");
+        $("#open-refregi").show();
     }, function(){
-        $("#open-refregi").css("display", "none");
+        $("#open-refregi").hide();
     });
 
 })

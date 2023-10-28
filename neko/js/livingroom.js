@@ -1,20 +1,20 @@
 $(document).ready(function(){
 
     $("#makura").click(function(){
-        $("#makura1").css("display", "block");
-        $("#makura").css("display", "none");
+        $("#makura1").show();
+        $("#makura").hide();
     })
     $("#makura1").click(function(){
-        $("#makura").css("display", "block");
-        $("#makura1").css("display", "none");
+        $("#makura").show();
+        $("#makura1").hide();
     })
     $("#tv").click(function(){
-        $("#page").css("display", "block");
+        $("#page").show();
         $("#rickroll")[0].currentTime=0;
         $("#rickroll")[0].play();
     })
     $("#batsu").click(function(){
-        $("#page").css("display", "none");
+        $("#page").hide();
         $("#rickroll")[0].pause();
     })
 
