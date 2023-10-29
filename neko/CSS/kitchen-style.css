@@ -27,6 +27,32 @@ body{
     bottom: 20%;
 
 }
+.Faucet{
+    position: fixed;
+    display: block;
+    width: 2%;
+    height: 11.5%;
+    left: 36.9%;
+    bottom: 39.3%;
+}
+.water{
+    position: fixed;
+    display: none;
+    width: 7%;
+    height: 11%;
+    left: 34.1%;
+    bottom: 38.5%;
+
+}
+.water-more{
+    position: fixed;
+    display: none;
+    width: 29%;
+    height: 40%;
+    left: 25%;
+    bottom: 2%;
+
+}
 
 .map{
     display: block;
