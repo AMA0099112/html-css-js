@@ -17,5 +17,13 @@ $(document).ready(function(){
         $("#page").hide();
         $("#rickroll")[0].pause();
     })
+    $("#calender").click(function(){
+        $("#calender-y").show();
+        $("#calender").hide();
+    })
+    $("#calender-y").click(function(){
+        $("#calender-floor").show();
+        $("#calender-y").hide();
+    })
 
 })
