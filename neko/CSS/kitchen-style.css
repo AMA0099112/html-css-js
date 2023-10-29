@@ -1,0 +1,37 @@
+body{
+    background-image: url('../img/廚房底圖.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(141, 190, 215, 0.5);
+
+}
+.open-refregi{
+    display: none;
+    position: fixed;
+    width: 49%;
+    height: 88%;
+    left: 47%;
+    top: 7%;
+    bottom: 21%;
+
+
+}
+.refregi{
+    position: fixed;
+    display: block;
+    width: 30%;
+    height: 88%;
+    left: 47%;
+    top: 6%;
+    bottom: 20%;
+
+}
+
+.map{
+    display: block;
+    width: 10%;
+    right: 2%;
+    bottom: 2%;
+    position: fixed;
+}
