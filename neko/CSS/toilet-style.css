@@ -1,0 +1,47 @@
+body {
+    background-image: url('../img/浴室.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.light1 {
+    /*on*/
+    display: block;
+    width: 3%;
+    margin-top: 21%;
+    margin-left: 85%;
+}
+
+.light2 {
+    /*off*/
+    width: 3%;
+    display: none;
+    position: fixed;
+    top: 38.5%;
+    left: 84.6%;
+}
+
+.music {
+    cursor: pointer;
+    position: absolute;
+    width: 25%;
+    height: 35%;
+    top: 60%;
+    left: 64%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.dark {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.709);
+    padding: 19%;
+    padding-bottom: 33%;
+}
+
+.map {
+    position: fixed;
+    width: 10%;
+    top: 80%;
+    left: 90%;
+}
