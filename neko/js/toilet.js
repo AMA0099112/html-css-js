@@ -3,11 +3,18 @@ $(document).ready(function () {
         $("#off").toggle();
         $("#on").toggle();
         $("#dark").toggle();
+        $("#off2").toggle();
+        $("#mirror").toggle();
+        $("#mirror2").toggle();
+        $("#blackcat").toggle();
     });
-    $("#off").click(function () {
+    $("#off2").click(function () {
         $("#off").toggle();
         $("#on").toggle();
         $("#dark").toggle();
+        $("#mirror").toggle();
+        $("#mirror2").toggle();
+        $("#blackcat").toggle();
     });
 });
 
