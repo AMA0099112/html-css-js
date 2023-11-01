@@ -220,129 +220,145 @@ body {
 .map:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(255, 255, 255, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
+    /* 鼠標移上去時會有效果 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
 }
 
 .one:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.one:active {
+    transform: scale(0.8);
 }
 
 .two:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.two:active {
+    transform: scale(0.8);
 }
 
 .three:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.three:active {
+    transform: scale(0.8);
 }
 
 .four:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.four:active {
+    transform: scale(0.8);
 }
 
 .five:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.five:active {
+    transform: scale(0.8);
 }
 
 .six:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.six:active {
+    transform: scale(0.8);
 }
 
 .seven:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.seven:active {
+    transform: scale(0.8);
 }
 
 .eight:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.eight:active {
+    transform: scale(0.8);
 }
 
 .nine:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.nine:active {
+    transform: scale(0.8);
 }
 
 .zero:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.zero:active {
+    transform: scale(0.8);
 }
 
 .lock:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
+}
+
+.lock:active {
+    transform: scale(0.8);
 }
 
 .jin:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
-    /* 添加阴影效果 */
+    /* 添加陰影 */
 }
 
-.good {
-    position: fixed;
-    display: none;
-    width: 20%;
-    height: 30%;
-    top: 10%;
-    left: 40%;
-    background-color: #26a350;
-    opacity: 0.9;
+.jin:active {
+    transform: scale(0.8);
 }
 
-.bad {
-    position: fixed;
-    display: none;
-    width: 20%;
-    height: 30%;
-    top: 40%;
-    left: 10%;
-    background-color: #a32626;
-    opacity: 0.9;
-}
 
-.dow {
+
+/*.dow {
     transform: translate(-50%, -50%);
-}
+}*/

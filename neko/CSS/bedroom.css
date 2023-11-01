@@ -71,6 +71,61 @@ body {
     position: fixed;
     display: block;
     width: 10%;
-    margin-left: 90%;
-    margin-top: 43%;
+    right: 2%;
+    bottom: 2%;
+    border-radius: 48%;
+    transition: background-color 0.5s;
+}
+
+.chair1 {
+    position: fixed;
+    display: block;
+    width: 40%;
+    height: 39%;
+    top: 30%;
+    left: 23.3%;
+}
+
+.chair2 {
+    position: fixed;
+    display: none;
+    width: 30%;
+    height: 27%;
+    top: 36%;
+    left: 35%;
+}
+
+.chair3 {
+    position: fixed;
+    display: none;
+    width: 20%;
+    height: 27%;
+    top: 45%;
+    left: 45%;
+}
+
+.cup {
+    position: fixed;
+    display: block;
+    width: 7%;
+    height: 8%;
+    top: 30%;
+    left: 39%;
+}
+
+.car3 {
+    position: fixed;
+    display: none;
+    width: 7%;
+    height: 8%;
+    top: 51%;
+    left: 41%;
+}
+
+.map:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* 鼠標移上去時會有效果 */
+    box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
+    /* 添加陰影 */
 }

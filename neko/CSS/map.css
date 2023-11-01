@@ -36,9 +36,7 @@ p {
     width: 8%;
     height: 8%;
     display: flex;
-    /* 将 .door 设置为 flex 容器 */
     justify-content: center;
-    /* 文本水平居中 */
     align-items: center;
     background-color: rgba(162, 225, 250, 0.825);
     position: fixed;
@@ -57,9 +55,7 @@ p {
     width: 20%;
     height: 70%;
     display: flex;
-    /* 将 .door 设置为 flex 容器 */
     justify-content: center;
-    /* 文本水平居中 */
     align-items: center;
     background-color: rgb(172, 232, 209);
     position: fixed;
@@ -75,9 +71,7 @@ p {
     width: 26%;
     height: 40%;
     display: flex;
-    /* 将 .door 设置为 flex 容器 */
     justify-content: center;
-    /* 文本水平居中 */
     align-items: center;
     background-color: rgb(210, 194, 221);
     position: fixed;
@@ -93,9 +87,7 @@ p {
     width: 9%;
     height: 28%;
     display: flex;
-    /* 将 .door 设置为 flex 容器 */
     justify-content: center;
-    /* 文本水平居中 */
     align-items: center;
     background-color: rgb(225, 197, 197);
     position: fixed;
@@ -111,9 +103,7 @@ p {
     width: 17%;
     height: 39%;
     display: flex;
-    /* 将 .door 设置为 flex 容器 */
     justify-content: center;
-    /* 文本水平居中 */
     align-items: center;
     background-color: rgb(229, 230, 189);
     position: fixed;
@@ -129,39 +119,29 @@ p {
 .door:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(111, 137, 173);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* 添加阴影效果 */
 }
 
 .bathroom:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(188, 131, 159);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* 添加阴影效果 */
 }
 
 .bedroom:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(164, 121, 190);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* 添加阴影效果 */
 }
 
 .livingroom:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(141, 187, 165);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* 添加阴影效果 */
 }
 
 .kitchen:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(196, 201, 142);
-    /* 鼠标悬停时向上浮动5像素 */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* 添加阴影效果 */
 }
