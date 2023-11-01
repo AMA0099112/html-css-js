@@ -18,6 +18,26 @@ body {
     left: 20%;
 }
 
+.aircon-off {
+    position: fixed;
+    display: block;
+    width: 30%;
+    height: 25%;
+    top: 2%;
+    left: 1%;
+}
+
+.aircon-on {
+    position: fixed;
+    display: none;
+    width: 30%;
+    height: 25%;
+    top: 2%;
+    left: 1%;
+
+}
+
+
 .page {
     display: none;
 }
@@ -25,9 +45,9 @@ body {
 .note {
     display: block;
     position: fixed;
-    width: 70%;
-    top: 5%;
-    left: 15%;
+    width: 40%;
+    top: 15%;
+    left: 33%;
 }
 
 .batsu {
