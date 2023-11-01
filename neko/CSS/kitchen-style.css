@@ -53,6 +53,15 @@ body{
     bottom: 2%;
 
 }
+.cat_bombay{
+    display: block;
+    position: fixed;
+    width: 13%;
+    height: 25%;
+    right: 85%;
+    bottom: 2%;
+
+}
 
 .map{
     display: block;
@@ -60,4 +69,30 @@ body{
     right: 2%;
     bottom: 2%;
     position: fixed;
+    border-radius: 48%;
+    transition: background-color 0.5s;
+}
+.map:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* 鼠标悬停时向上浮动5像素 */
+    box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
+    /* 添加阴影效果 */
+}
+.car{
+    position: fixed;
+    display: none;
+    width: 8%;
+    height: 12%;
+    rotate: 45deg;
+    left: 27%;
+    bottom: 30%;
+}
+.gui{
+    position: fixed;
+    display: block;
+    width: 23%;
+    height: 30.7%;
+    left: 25%;
+    bottom: 9%;
 }
