@@ -48,7 +48,7 @@ $(document).ready(function () {
         }, 2000);
     });
 
-    $("#tail").click(function () {
+    $("#rec").click(function () {
         $("#cat-stand").toggle();
     });
 
