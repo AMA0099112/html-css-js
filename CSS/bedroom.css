@@ -1,0 +1,131 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url(../img/房間.PNG);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.note-b {
+    position: fixed;
+    display: block;
+    width: 13%;
+    top: 54%;
+    left: 20%;
+}
+
+.aircon-off {
+    position: fixed;
+    display: block;
+    width: 30%;
+    height: 25%;
+    top: 2%;
+    left: 1%;
+}
+
+.aircon-on {
+    position: fixed;
+    display: none;
+    width: 30%;
+    height: 25%;
+    top: 2%;
+    left: 1%;
+
+}
+
+
+.page {
+    display: none;
+}
+
+.note {
+    display: block;
+    position: fixed;
+    width: 40%;
+    top: 15%;
+    left: 33%;
+}
+
+.batsu {
+    display: block;
+    position: fixed;
+    width: 8%;
+    top: 7%;
+    left: 70%;
+}
+
+.block {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #282845;
+    opacity: 0.9;
+}
+
+.map {
+    position: fixed;
+    display: block;
+    width: 10%;
+    right: 2%;
+    bottom: 2%;
+    border-radius: 48%;
+    transition: background-color 0.5s;
+}
+
+.chair1 {
+    position: fixed;
+    display: block;
+    width: 40%;
+    height: 39%;
+    top: 30%;
+    left: 23.3%;
+}
+
+.chair2 {
+    position: fixed;
+    display: none;
+    width: 30%;
+    height: 27%;
+    top: 36%;
+    left: 35%;
+}
+
+.chair3 {
+    position: fixed;
+    display: none;
+    width: 20%;
+    height: 27%;
+    top: 45%;
+    left: 45%;
+}
+
+.cup {
+    position: fixed;
+    display: block;
+    width: 7%;
+    height: 8%;
+    top: 30%;
+    left: 39%;
+}
+
+.car3 {
+    position: fixed;
+    display: none;
+    width: 7%;
+    height: 8%;
+    top: 51%;
+    left: 41%;
+}
+
+.map:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* 鼠標移上去時會有效果 */
+    box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
+    /* 添加陰影 */
+}

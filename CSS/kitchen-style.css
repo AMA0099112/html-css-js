@@ -1,0 +1,98 @@
+body{
+    background-image: url('../img/廚房底圖.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(141, 190, 215, 0.5);
+
+}
+.open-refregi{
+    display: none;
+    position: fixed;
+    width: 49%;
+    height: 88%;
+    left: 47%;
+    top: 7%;
+    bottom: 21%;
+
+
+}
+.refregi{
+    position: fixed;
+    display: block;
+    width: 30%;
+    height: 88%;
+    left: 47%;
+    top: 6%;
+    bottom: 20%;
+
+}
+.Faucet{
+    position: fixed;
+    display: block;
+    width: 2%;
+    height: 11.5%;
+    left: 36.9%;
+    bottom: 39.3%;
+}
+.water{
+    position: fixed;
+    display: none;
+    width: 7%;
+    height: 11%;
+    left: 34.1%;
+    bottom: 38.5%;
+
+}
+.water-more{
+    position: fixed;
+    display: none;
+    width: 29%;
+    height: 40%;
+    left: 25%;
+    bottom: 2%;
+
+}
+.cat_bombay{
+    display: block;
+    position: fixed;
+    width: 13%;
+    height: 25%;
+    right: 85%;
+    bottom: 2%;
+
+}
+
+.map{
+    display: block;
+    width: 10%;
+    right: 2%;
+    bottom: 2%;
+    position: fixed;
+    border-radius: 48%;
+    transition: background-color 0.5s;
+}
+.map:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* 鼠标悬停时向上浮动5像素 */
+    box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
+    /* 添加阴影效果 */
+}
+.car{
+    position: fixed;
+    display: none;
+    width: 8%;
+    height: 12%;
+    rotate: 45deg;
+    left: 27%;
+    bottom: 30%;
+}
+.gui{
+    position: fixed;
+    display: block;
+    width: 23%;
+    height: 30.7%;
+    left: 25%;
+    bottom: 9%;
+}

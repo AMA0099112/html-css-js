@@ -1,0 +1,147 @@
+body {
+    background-image: url('../img/地圖底圖.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(77, 96, 105, 0.8);
+    background-blend-mode: multiply;
+
+}
+
+.title {
+    width: 25%;
+    height: 35%;
+    display: block;
+    background-color: rgba(224, 214, 184, 0.842);
+    border: 10px solid rgba(114, 69, 32, 0.777);
+    border-radius: 3%;
+    position: fixed;
+    top: 8%;
+    left: 13%;
+    text-align: center;
+
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+
+.door {
+    width: 8%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(162, 225, 250, 0.825);
+    position: fixed;
+    top: 11%;
+    left: 56%;
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.541);
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    transition: background-color 0.5s;
+}
+
+
+.livingroom {
+    width: 20%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 232, 209);
+    position: fixed;
+    top: 22%;
+    left: 44%;
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.541);
+    font-size: 1.5em;
+    transition: background-color 0.5s;
+}
+
+.bedroom {
+    width: 26%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 194, 221);
+    position: fixed;
+    top: 52%;
+    left: 16%;
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.541);
+    font-size: 1.5em;
+    transition: background-color 0.5s;
+}
+
+.bathroom {
+    width: 9%;
+    height: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 197, 197);
+    position: fixed;
+    top: 64%;
+    left: 66%;
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.541);
+    font-size: 1.5em;
+    transition: background-color 0.5s;
+}
+
+.kitchen {
+    width: 17%;
+    height: 39%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 230, 189);
+    position: fixed;
+    top: 22%;
+    left: 66%;
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.541);
+    font-size: 1.5em;
+    transition: background-color 0.5s;
+
+}
+
+.door:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgb(111, 137, 173);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bathroom:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgb(188, 131, 159);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bedroom:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgb(164, 121, 190);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.livingroom:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgb(141, 187, 165);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.kitchen:hover {
+    transform: translate(-5px, -5px);
+    background-color: rgb(196, 201, 142);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
