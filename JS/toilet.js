@@ -21,6 +21,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#toilet").click(function () {
         $("#toilet-sound").get(0).play();
+        $("#cat-scared").toggle();
     });
 });
 

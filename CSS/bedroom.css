@@ -122,10 +122,71 @@ body {
     left: 41%;
 }
 
+.cucumber {
+    position: fixed;
+    display: block;
+    width: 10%;
+    height: 11%;
+    top: 12%;
+    left: 90%;
+    transform: rotate(0deg) scale(1);
+    /* 初始狀態 */
+}
+
+.apple {
+    position: fixed;
+    display: block;
+    width: 9%;
+    height: 11%;
+    top: -40%;
+    left: 90%;
+}
+
+.apple-d {
+    position: fixed;
+    display: none;
+    width: 9%;
+    height: 11%;
+    top: 60%;
+    left: 90%;
+}
+
+.tail {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 70%;
+    top: 22%;
+    left: 6.7%;
+
+}
+
+.cat-stand {
+    position: fixed;
+    display: none;
+    width: 20%;
+    height: 27%;
+    top: 61%;
+    left: 3%;
+}
+
+.cat-cold {
+    position: fixed;
+    display: block;
+    width: 70%;
+    height: 85%;
+    top: 90%;
+    left: 3%;
+}
+
 .map:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(255, 255, 255, 0.7);
     /* 鼠標移上去時會有效果 */
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
     /* 添加陰影 */
+}
+
+#cucumber.rotate {
+    transform: rotate(30deg) scale(1.5);
 }

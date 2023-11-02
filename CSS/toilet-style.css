@@ -91,6 +91,15 @@ body {
     opacity: 0.7;
 }
 
+.cat-scared {
+    width: 30%;
+    height: 38%;
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 60%;
+}
+
 .map {
     position: fixed;
     display: block;
