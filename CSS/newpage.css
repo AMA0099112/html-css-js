@@ -1,0 +1,133 @@
+
+.custom-carousel-container {
+    max-width: 1500px; /* Set the maximum width of the carousel container */
+    margin: 2% auto; /* Center the carousel on the page */
+}
+
+/* Custom styles for the carousel images */
+.custom-carousel-container .carousel-item img {
+    width: 100%; /* Make the images fill the container width */
+    height: 100%; /* Make the images fill the container height */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+}
+
+.carousel-caption{
+    background-color: aliceblue;
+    width: 8%;
+    height: 13%;
+    margin:auto;
+    margin-bottom: 2%;
+    border-radius: 30px;
+    font-family: 'cwTeXYen', sans-serif;
+    border: 1px solid #000; /* 1像素寬，黑色邊框 */
+    padding: 27px; /* 可選：增加內邊距，使內容離邊框有些距離 */
+
+}
+.scenery{
+    display: flex;
+    flex-direction: column; /* 將子元素在垂直方向排列 */
+    justify-content: center;
+    align-items: center;
+    font-family: 'cwTeXYen', sans-serif;
+    border: 1px solid #000; /* 1像素寬，黑色邊框 */
+    padding: 10px; /* 可選：增加內邊距，使內容離邊框有些距離 */
+}
+.about{
+    background: #DBE5A3;
+    display: flex;
+    flex-direction: column; /* 將子元素在垂直方向排列 */
+    justify-content: center;
+    align-items: center;
+    font-family: 'cwTeXYen', sans-serif;
+    padding: 10px; /* 可選：增加內邊距，使內容離邊框有些距離 */
+}
+.us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8FED2;
+}
+
+.bighead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 10%; /* 可選：調整左邊大頭貼和介紹之間的間距 */
+}
+
+.chen{
+    width: 300px;
+    height: auto;
+    border-radius: 50%; /* 使圖片呈圓形 */
+    border: 3px solid #ffd77f;
+    margin: 10% 0%;
+    box-shadow: 20px 20px 2px #dfca3c9f;
+}
+.weng {
+    width: 300px;
+    height: auto;
+    border-radius: 50%; /* 使圖片呈圓形 */
+    border: 3px solid #b0d5a9;
+    margin: 10% 0%;
+    box-shadow: 20px 20px 2px #99d1a89f;
+}
+.chen:hover,.weng:hover {
+    /* :hover 代表滑鼠移到元素上時的狀態 */ 
+    transform: scale(1.05);
+}
+
+.chen:active,.weng:active {
+    /* :active是滑鼠點擊元素的狀態 */
+    transform: scale(1);
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+}
+
+.introduce {
+    width: 900px; /* 可選：設定介紹的最大寬度 */
+    height: 500px;
+    background: #fff1c5;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 2px #cf9647;
+
+}
+.introduce p{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 1.5rem;
+}
+
+.cattt{
+    display: flex;
+    flex-direction: column; /* 將子元素在垂直方向排列 */
+    justify-content: center;
+    align-items: center;
+    font-family: 'cwTeXYen', sans-serif;
+    border: 1px solid #000; /* 1像素寬，黑色邊框 */
+    padding: 10px; /* 可選：增加內邊距，使內容離邊框有些距離 */
+}
+
+.catttmono{
+    display: flex;
+    width: 80%;
+
+}
+
+/*test*/
+
+  /* Additional styles for content animation */
+  #content1 {
+    animation: fadeInUp 0.5s ease;
+  }
+
+
+  /* Define animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
