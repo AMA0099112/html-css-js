@@ -108,26 +108,81 @@
 
 .catttmono{
     display: flex;
-    width: 80%;
-
+    width: 100%;
+    height: 700px;
+    margin: 2%;
 }
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.left{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    background-color: #b0d5a9;
+    border-radius: 50px;
+}
+
+.right img{
+    width: 30%;
+    height: auto;
+    border: 3px solid #b0d5a9;
+    margin: 5% 2%;
+    box-shadow: 10px 10px 2px #99d1a89f;
+}
+
+.leftimg{
+    height: auto;
+    width: 35%;
+    position: relative;
+}
+.catimage{
+    width: 100%;
+    height: auto;
+}
+.catintroduce{
+    margin: 5%;
+    width: 60%;
+    position: relative;
+}
+
 
 /*test*/
 
   /* Additional styles for content animation */
-  #content1 {
-    animation: fadeInUp 0.5s ease;
+  #content1 h2{
+    font-size:8rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 3px black;
+    font-family: 'cwTeXYen', sans-serif;
+  }
+  #content1 p{
+    font-family: 'cwTeXYen', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size:1.5rem;
   }
 
 
-  /* Define animation keyframes */
-  @keyframes fadeInUp {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+  
+
