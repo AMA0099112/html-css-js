@@ -9,7 +9,7 @@ $(document).ready(function(){
               <p>姓名：陳怡蒨</p>
               <p>性別：女</p>
               <p>專長：彈吉他</p>
-              <p>心得感想：:)</p>
+              <p>心得感想：肝悲</p>
             `).css({
                 'background-color': '#fff1c5',
                 'box-shadow': '20px 20px 2px #cf9647'}).fadeIn();
@@ -44,6 +44,10 @@ $(document).ready(function(){
         <p>${description}</p>
         <p class="additionalContent">${additional}</p>
       `);
-    });
+      $("#left").hide();
+      $("#left").css('left', '-100%');
+      $("#left").show();
+      $("#left").animate({ left: "0%" }, 1500);
+    })
 
 })
