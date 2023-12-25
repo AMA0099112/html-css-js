@@ -10,6 +10,44 @@ body {
     background-repeat: no-repeat;
 }
 
+/*密碼輸入介面*/
+.code-enter {
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 14%;
+    padding: 1%;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 21%;
+    left: 51.5%;
+    z-index: 100;
+}
+
+.print {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    display: block;
+    width: 13%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #e0e0f6;
+    opacity: 0.9;
+    box-shadow: 1px 1px 3px 1px inset;
+}
+
+#passwordDisplay {
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    position: fixed;
+    color: #7a7ae6;
+}
+
+
+/*大門*/
 .door {
     width: 30%;
     height: 75%;
@@ -148,7 +186,7 @@ body {
     position: fixed;
     width: 8%;
     top: 7%;
-    left: 70%;
+    left: 80%;
 }
 
 .block {
@@ -166,7 +204,7 @@ body {
     width: 35%;
     height: 90%;
     top: 3%;
-    left: 32.5%;
+    left: 8%;
 }
 
 .one {
@@ -175,7 +213,7 @@ body {
     width: 7%;
     height: 13%;
     top: 18%;
-    left: 39%;
+    left: 15%;
     border-radius: 10%;
 }
 
@@ -185,7 +223,7 @@ body {
     width: 7%;
     height: 13%;
     top: 18%;
-    left: 47%;
+    left: 23%;
     border-radius: 10%;
 }
 
@@ -195,7 +233,7 @@ body {
     width: 7%;
     height: 13%;
     top: 18%;
-    left: 55%;
+    left: 31%;
     border-radius: 10%;
 }
 
@@ -205,7 +243,7 @@ body {
     width: 7%;
     height: 13%;
     top: 33%;
-    left: 39%;
+    left: 15%;
     border-radius: 10%;
 }
 
@@ -215,7 +253,7 @@ body {
     width: 7%;
     height: 13%;
     top: 33%;
-    left: 47%;
+    left: 23%;
     border-radius: 10%;
 }
 
@@ -225,7 +263,7 @@ body {
     width: 7%;
     height: 13%;
     top: 33%;
-    left: 55%;
+    left: 31%;
     border-radius: 10%;
 }
 
@@ -235,7 +273,7 @@ body {
     width: 7%;
     height: 13%;
     top: 48%;
-    left: 39%;
+    left: 15%;
     border-radius: 10%;
 }
 
@@ -245,7 +283,7 @@ body {
     width: 7%;
     height: 13%;
     top: 48%;
-    left: 47%;
+    left: 23%;
     border-radius: 10%;
 }
 
@@ -255,7 +293,7 @@ body {
     width: 7%;
     height: 13%;
     top: 48%;
-    left: 55%;
+    left: 31%;
     border-radius: 10%;
 }
 
@@ -265,7 +303,7 @@ body {
     width: 7%;
     height: 13%;
     top: 63%;
-    left: 39%;
+    left: 15%;
     border-radius: 10%;
 }
 
@@ -275,17 +313,17 @@ body {
     width: 7%;
     height: 13%;
     top: 63%;
-    left: 47%;
+    left: 23%;
     border-radius: 10%;
 }
 
-.jin {
+.backspace {
     display: block;
     position: fixed;
     width: 7%;
     height: 13%;
     top: 63%;
-    left: 55%;
+    left: 31%;
     border-radius: 10%;
 }
 
@@ -418,19 +456,23 @@ body {
     transform: scale(0.8);
 }
 
-.jin:hover {
+.backspace:hover {
     transform: translate(-5px, -5px);
     background-color: rgba(71, 70, 65, 0.7);
     box-shadow: 0 5px 15px rgba(108, 89, 37, 0.7);
     /* 添加陰影 */
 }
 
-.jin:active {
+.backspace:active {
     transform: scale(0.8);
 }
 
+.code-enter {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 3em;
+}
 
-
-/*.dow {
-    transform: translate(-50%, -50%);
-}*/
+#passwordDisplay {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 4em;
+}

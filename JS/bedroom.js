@@ -34,19 +34,19 @@ $(document).ready(function () {
         $("#car3").toggle();
     });
 
-    $("#cucumber").click(function () {
-        $("#cucumber").addClass('rotate');
-        setTimeout(function () {
-            $("#cucumber").removeClass('rotate');
-        }, 1000); //持續時間1秒 
-        setTimeout(function () {
-            $("#apple").animate({ top: "60%" }, 1000);
-        }, 1000); //持續時間1秒 
-        setTimeout(function () {
-            $("#apple-d").show();
-            $("#apple").hide();
-        }, 2000);
-    });
+    //$(".cover").click(function () {
+    //    $("#cucumber").addClass('rotate');
+    //    setTimeout(function () {
+    //        $("#cucumber").removeClass('rotate');
+    //    }, 1000); //持續時間1秒 
+    //    setTimeout(function () {
+    //        $("#apple").animate({ top: "60%" }, 1000);
+    //    }, 1000); //持續時間1秒 
+    //    setTimeout(function () {
+    //        $("#apple-d").show();
+    //        $("#apple").hide();
+    //    }, 2000);
+    //});
 
     $("#rec").click(function () {
         $("#cat-stand").toggle();

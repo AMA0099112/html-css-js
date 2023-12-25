@@ -4,48 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+    <title>onePage</title>
+
+    <!--CSS連結-->
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
-    <link rel="stylesheet" href=".\CSS\index-style.css">
+    <!--字體連結-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+    <!--JQuery 連結-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="JS/index.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.0.0-dist/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <!-- 添加 Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+
 </head>
 
 <body>
-    <img class="title" src=".\img\title.PNG" alt="home">
-    <div class="intro">
-        <p>一起床想出門買個早餐，卻發現了門打不開了!!!一定是有人偷偷換了我的密碼!太可惡了!拔拔麻麻還不接我電話，只好在家裡找找密碼的線索了╮(╯_╰)╭</p>
-    </div>
-
-    <img class="menu" id="menu" src=".\img\icon_menu.png" alt="icon_menu_">
-
-    <div class="block" id="block">
-        <nav class="nav" id="nav">
-            <ul class="ul" id="ul">
-                <a href="">
-                    <li>關於我們</li>
-                </a>
-                <a href="">
-                    <li>遊戲介紹</li>
-                </a>
-                <a href="">
-                    <li>留言欄</li>
-                </a>
-                <a href="">
-                    <li>貓貓圖鑑</li>
-                </a>
-                <a href="">
-                    <li>小彩蛋</li>
-                </a>
+    <!--導覽列-->
+    <header>
+        <nav class="nav-big">
+            <ul class="nav-list">
+                <img class="img" src="./img/IMG_2828.PNG" alt="LOGO">
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-item-link">首頁</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-item-link dropdown-toggle ">遊戲介紹</a>
+                    <ul class="nav-sub-list" aria-labelledby="dropdownMenu2">
+                        <a href="#" class="daulian">
+                            <li class="nav">故事背景</li>
+                        </a>
+                        <a href="#" class="daulian">
+                            <li class="nav">場景介紹</li>
+                        </a>
+                        <a href="#" class="daulian">
+                            <li class="nav">遊玩方式</li>
+                        </a>
+                        <a href="#" class="daulian cat">
+                            <li class="nav">貓咪介紹</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-item-link">關於我們</a>
+                </li>
+                <li class="nav-list-item searching">
+                    <input class="form-control me-2" type="search" id="search" title="輸入搜尋字詞" placeholder="Search..."
+                        aria-label="Search">
+                    <button class="botton" type="submit"><img src="./img/search.png" alt="search"></button>
+                </li>
+                <li class="nav-list-item">
+                    <a href="https://ama0099112.github.io/html-css-js/" class="nav-list-item-link-play ">開始遊戲</a>
+                </li>
             </ul>
         </nav>
+    </header>
+
+    <!--立即開始-->
+    <div class="block1">
+        <div class="quick-start">
+            <div class="big-logo-center">
+                <img class="big-logo" src="./img/IMG_2831.PNG" alt="big-logo">
+            </div>
+            <a href="https://ama0099112.github.io/html-css-js/" class="playgame">
+                <p class="word">立即開始</p>
+            </a>
+            <img class="start" src="./img/IMG_2833.PNG" alt="start page">
+
+        </div>
     </div>
-    <div class="noblock" id="noblock"></div>
-    <a href=".\map.html" alt="To map">
-        <div class="start">START</div>
-    </a>
+
+    <!--滑動固定圖-->
+    <img class="back-always" src="./img/IMG_2820.PNG" alt="back-always">
+    <img class="back-always2" src="./img/IMG_2820.PNG" alt="back-always">
+    <!--背景故事-->
+    <div class="block2">
+        <div class="background-story">
+            <div class="title">
+                <h1 class="headone">背景故事</h1>
+                <h6 class="headsix">-background-</h6>
+            </div>
+
+            <p class="background-text">
+                非常喜歡貓咪的我，在放學回家的路上發現了一隻黑貓，我本想上前摸摸牠，但牠卻逕自向前走去，還回頭看了我一眼，似乎是在叫我跟上，冥冥之中似乎有一種吸引力，我就這樣迷迷糊糊的跟著牠走向未知的深處.....。</p>
+            <img class="background-page" src="./img/IMG_2832.GIF" alt="background-page">
+        </div>
+    </div>
+
+    <!--遊玩方式-->
+    <div class="block3">
+        <!--標題-->
+        <div class="How-to-play-play">
+            <h1 class="headone">遊玩方式</h1>
+            <h6 class="headsix">-How to play-</h6>
+        </div>
+        <!--圖片-->
+        <div class="gif">
+            <img class="gif-picture" src="./img/地圖頁.gif" alt="map">
+            <img class="gif-picture" src="./img/點擊.gif" alt="click">
+            <img class="gif-picture" src="./img/密碼.gif" alt="code">
+        </div>
+        <!--遊玩說明-->
+        <div class="How-to-play-text">
+            <p class="click">地圖切換</p>
+            <p class="click">點擊探索</p>
+            <p class="click">解密逃出</p>
+        </div>
+        <div class="How-to-play-text-two">
+            <p class="click2">選擇地圖進入各式場景</p>
+            <p class="click2">隨意選擇物品觸發開關</p>
+            <p class="click2">輸入密碼才能逃出生天</p>
+        </div>
+    </div>
 
 
+    <!--firebase測試-->
+    <h1>留言板</h1>
+    <!-- 留言列表 -->
+    <div id="message-input">
+        <h2>留言输入</h2>
+        <form id="message-form">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="message">留言:</label>
+            <textarea id="message" required></textarea>
+            <br>
+            <button type="submit">提交留言</button>
+        </form>
+    </div>
+
+    <div id="message-list">
+        <h2>留言列表</h2>
+        <ul id="messages"></ul>
+    </div>
+
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="everybody">
+            <div class="everybody-can-play"><img class="poopian" src="./img/w1200.jpg" alt="everybody can play">
+            </div>
+            <div class="text">本遊戲為免費使用，遊戲內”不”提供購買虛擬貨幣、物品等付費服務。請注意遊戲時間，避免沉迷。本遊戲情節不涉及性、暴力。</div>
+            <div class="link">
+                <a href="#" class="list-item"><img class="list-item-link" src="./img/discord.png" alt="discord"></a>
+                <a href="#" class="list-item"><img class="list-item-link" src="./img/facebook.png" alt="facebook"></a>
+                <a href="#" class="list-item"><img class="list-item-link" src="./img/instagram.png" alt="instagram"></a>
+                <a href="#" class="list-item"><img class="list-item-link" src="./img/twitter.png"
+                        alt="it is a bird"></a>
+                <a href="#" class="list-item"><img class="list-item-link" src="./img/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <hr class="line">
+        <!--各種logo-->
+        <div class="footer-picture">
+            <img class="game-name" src="./img/IMG_2831.PNG" alt="game-name">
+            <img class="dtd" src="./img/0706.png" alt="dtd">
+            <img class="logo" src="./img/IMG_2828.PNG" alt="logo">
+        </div>
+        <div class="down-footer">
+            Copyright © 2023 JingYu-YiChain. All rights reserved.
+        </div>
+
+    </footer>
 </body>
 
 </html>

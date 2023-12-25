@@ -38,7 +38,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(162, 225, 250, 0.825);
+    background-image: linear-gradient(0deg, rgba(66, 112, 130, 0.825), rgba(162, 225, 250, 0.825));
     position: fixed;
     top: 11%;
     left: 56%;
@@ -48,6 +48,7 @@ p {
     flex-direction: column;
     font-size: 1.5em;
     transition: background-color 0.5s;
+    color: black;
 }
 
 
@@ -57,7 +58,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(172, 232, 209);
+    background-image: linear-gradient(0deg, rgb(47, 139, 104), rgb(172, 232, 209));
     position: fixed;
     top: 22%;
     left: 44%;
@@ -65,6 +66,7 @@ p {
     border: 5px solid rgba(0, 0, 0, 0.541);
     font-size: 1.5em;
     transition: background-color 0.5s;
+    color: black;
 }
 
 .bedroom {
@@ -73,7 +75,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(210, 194, 221);
+    background-image: linear-gradient(0deg, rgb(115, 83, 137), rgb(210, 194, 221));
     position: fixed;
     top: 52%;
     left: 16%;
@@ -81,6 +83,7 @@ p {
     border: 5px solid rgba(0, 0, 0, 0.541);
     font-size: 1.5em;
     transition: background-color 0.5s;
+    color: black;
 }
 
 .bathroom {
@@ -89,7 +92,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(225, 197, 197);
+    background-image: linear-gradient(0deg, rgb(133, 70, 70), rgb(225, 197, 197));
     position: fixed;
     top: 64%;
     left: 66%;
@@ -97,6 +100,7 @@ p {
     border: 5px solid rgba(0, 0, 0, 0.541);
     font-size: 1.5em;
     transition: background-color 0.5s;
+    color: black;
 }
 
 .kitchen {
@@ -105,7 +109,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(229, 230, 189);
+    background-image: linear-gradient(0deg, rgb(134, 135, 69), rgb(229, 230, 189));
     position: fixed;
     top: 22%;
     left: 66%;
@@ -113,6 +117,7 @@ p {
     border: 5px solid rgba(0, 0, 0, 0.541);
     font-size: 1.5em;
     transition: background-color 0.5s;
+    color: black;
 
 }
 
@@ -120,28 +125,66 @@ p {
     transform: translate(-5px, -5px);
     background-color: rgb(111, 137, 173);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.door:hover:active {
+    transform: scale(0.9);
 }
 
 .bathroom:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(188, 131, 159);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.bathroom:hover:active {
+    transform: scale(0.9);
 }
 
 .bedroom:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(164, 121, 190);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.bedroom:hover:active {
+    transform: scale(0.9);
 }
 
 .livingroom:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(141, 187, 165);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.livingroom:hover:active {
+    transform: scale(0.9);
 }
 
 .kitchen:hover {
     transform: translate(-5px, -5px);
     background-color: rgb(196, 201, 142);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.kitchen:hover:active {
+    transform: scale(0.9);
+}
+
+h1 {
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+p {
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+.word {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 2rem;
 }

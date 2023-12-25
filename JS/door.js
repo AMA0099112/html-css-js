@@ -44,13 +44,15 @@ $(document).ready(function () {
     $("#lock").click(function () {
         //if (selectedValues.length === password.length) {
         const isCorrect = JSON.stringify(selectedValues) === JSON.stringify(password);
-        if (isCorrect) {
 
+        if (isCorrect) {
             // 執行成功後的操作
             window.location.href = 'last1.html';
         } else {
             // 重置输入的值
             selectedValues.length = 0;
+            $('#passwordDisplay').text(selectedValues.join(''));
+            $('#passwordDisplay').text("錯誤!!!");
         }
 
         console.log('Password:', password);
@@ -60,6 +62,16 @@ $(document).ready(function () {
     $(".cell").click(function () {
         const cellValue = parseInt($(this).data('value'));
         selectedValues.push(cellValue);
+        /*密碼超過5位數顯示歸零*/
+        const displayedPassword = selectedValues.slice(0, 5).join('');
+        /*顯示密碼*/
+        $('#passwordDisplay').text(displayedPassword);
 
+
+    });
+    $("#backspace").click(function () {
+        selectedValues.pop();
+        const displayedPassword = selectedValues.slice(0, 5).join('');
+        $('#passwordDisplay').text(displayedPassword);
     });
 });

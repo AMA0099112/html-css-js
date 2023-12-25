@@ -1,0 +1,452 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*滑動固定圖*/
+.back-always {
+    position: fixed;
+    top: 0%;
+    z-index: -1000;
+}
+
+.back-always2 {
+    position: fixed;
+    bottom: 0%;
+    z-index: -1000;
+}
+
+/*導覽列*/
+.nav-list {
+    background-color: #c8d387;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.img {
+    padding: 1%;
+    margin-left: 2%;
+}
+
+.nav-list-item {
+    /*去除標籤*/
+    list-style: none;
+    margin-top: 1%;
+    margin-left: 1.5%;
+    margin-right: 2.5%;
+}
+
+.nav-list-item:hover .nav-sub-list {
+    display: block;
+}
+
+.nav-list-item-link {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 20px;
+}
+
+.nav-list-item-link:hover {
+    color: #68856b;
+}
+
+.nav-sub-list {
+    /*去除標籤*/
+    list-style: none;
+    display: none;
+    background-color: #a0a970;
+    margin: 0% 1%;
+    width: 17%;
+    padding: 0%;
+    position: absolute;
+    z-index: 1000;
+    left: 22%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav {
+    padding: 10% 22.8% !important;
+
+}
+
+.cat:hover {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav:hover {
+
+    color: #68856b;
+}
+
+.daulian {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.daulian:hover {
+    background-color: #f0ffe7b2;
+}
+
+
+
+.searching {
+    display: flex;
+}
+
+.botton {
+    background-color: #68856b00;
+    border: 0;
+    margin-top: 13%;
+    height: 45px;
+}
+
+#search {
+    width: 100%;
+    height: 25%;
+    padding-left: 3%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    margin-top: 15%;
+    border-radius: 50px;
+    border: 2px solid rgba(110, 183, 43, 0.708);
+}
+
+
+.nav-list-item-link-play {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 20px;
+    background-color: #88B65A;
+    border: 3px solid black;
+    border-radius: 60px;
+}
+
+.nav-list-item-link-play:hover {
+    background-color: rgba(246, 208, 40, 0.637);
+    color: rgb(255, 255, 255);
+}
+
+.nav-list-item-link-play:active {
+    box-shadow: 3px 3px 10px 3px inset;
+}
+
+.nav-list-item-link-play:active:hover {
+    color: rgba(181, 181, 3, 0.655);
+}
+
+/*立即開始*/
+
+.block1 {
+    background-color: #c5eead;
+}
+
+.big-logo-center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.big-logo {
+    width: 50%;
+    height: auto;
+    margin-top: 1%;
+    filter: saturate(120%);
+}
+
+.start {
+    width: 100%;
+    height: auto;
+}
+
+.playgame {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #88B65A;
+    border: 3px solid black;
+    border-radius: 60px;
+    width: 30%;
+    position: absolute;
+    text-align: center;
+    margin: 37% 35% 0 35%;
+    padding: 2% 0 2% 0;
+    box-shadow: 0px 0px 0px 1px;
+}
+
+.playgame:hover {
+    background-color: rgba(246, 208, 40, 0.637);
+    color: rgb(255, 255, 255);
+}
+
+.playgame:active {
+    box-shadow: 3px 3px 10px 3px inset;
+}
+
+.playgame:active:hover {
+    color: rgba(181, 181, 3, 0.655);
+}
+
+/*背景故事*/
+.block2 {
+    margin-top: 3%;
+}
+
+.background-text {
+    position: absolute;
+    text-align: center;
+    width: 47%;
+    background-color: #f4f6f3;
+    border-radius: 20px;
+    padding: 5%;
+    margin: 15% 0 0 27%;
+    opacity: 0.6;
+    transition: all 0.5s ease-out;
+}
+
+.background-text:hover {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-out;
+    box-shadow: 0px 0px 15px 10px #d3e2c4;
+    overflow: hidden;
+
+}
+
+.background-page {
+    width: 100%;
+    height: auto;
+}
+
+
+.title {
+    position: absolute;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.headone {
+    text-align: center;
+}
+
+.headsix {
+    text-align: center;
+}
+
+/*遊玩方式*/
+.block3 {
+    margin-top: 3%;
+    background-color: #e6e4ad;
+    padding-bottom: 3%;
+
+}
+
+
+.How-to-play-play {
+    background-color: #EFF986;
+}
+
+.gif {
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.gif-picture {
+    border-radius: 15%;
+    transition: all 0.5s ease-out;
+    box-shadow: 3px 3px 10px 3px;
+    overflow: hidden;
+
+}
+
+.gif-picture:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+}
+
+.How-to-play-text {
+    display: flex;
+    display: flex;
+    width: 79%;
+    height: auto;
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.click {
+    margin: auto;
+}
+
+.How-to-play-text-two {
+    display: flex;
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 3%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.click2 {
+    margin: auto;
+}
+
+/*footer*/
+.footer {
+    background-color: #D6E1CE;
+}
+
+.everybody {
+    display: flex;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+.everybody-can-play {
+    margin-top: 1%;
+}
+
+.poopian {
+    margin-top: 10%;
+    margin-left: 60%;
+    width: 35%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.text {
+    margin-top: 3%;
+    width: 27%;
+    margin-left: 3%;
+}
+
+.link {
+    display: flex;
+    background-color: #D6E1CE;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.list-item {
+    display: block;
+    transform: scale(1.2);
+    padding-top: 2%;
+    padding-left: 1.3%;
+    margin-left: 10%;
+}
+
+.line {
+    width: 47%;
+    border: 1px solid black;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+.footer-picture {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    margin-bottom: 3%;
+    width: 80%;
+}
+
+.game-name {
+    display: block;
+    width: 20%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.dtd {
+    display: block;
+    width: 18%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.logo {
+    display: block;
+    width: 16%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.down-footer {
+    background-color: #929A63;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1%;
+    border-radius: 0%;
+}
+
+
+/*字體大小*/
+.nav-list-item-link {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 2rem;
+}
+
+.nav-list-item-link-play {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 1.5rem;
+}
+
+.daulian {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 2rem;
+
+}
+
+.playgame {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 5rem;
+}
+
+.text {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 1rem;
+}
+
+.headone {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 4rem;
+}
+
+.headsix {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 1em;
+}
+
+.background-text {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 2rem;
+}
+
+.click {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 2.2rem;
+}
+
+.How-to-play-text-two {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 1.5rem;
+}

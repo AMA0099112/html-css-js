@@ -1,0 +1,89 @@
+body {
+    background-image: url('../img/首頁底圖.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(141, 190, 215, 0.5);
+    background-blend-mode: multiply;
+    /*新增遮罩*/
+}
+
+.title {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.intro {
+    display: block;
+    background-color: white;
+    border: 5px solid #f1ff77e4;
+    border-color: rgb(245, 231, 154);
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 1%;
+    text-align: center;
+}
+
+.start {
+    display: block;
+    background-color: pink;
+    width: 10%;
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 50%;
+    color: rgb(210, 72, 123);
+    transition: background-color 0.5s;
+}
+
+.start:hover {
+    background-color: rgb(224, 127, 143);
+    color: white;
+}
+
+.start:active:hover {
+    box-shadow: 3px 3px 10px 3px inset;
+    color: rgb(210, 72, 123);
+}
+
+/*字體*/
+.intro {
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 1.5em;
+}
+
+.start {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    z-index: 100;
+}
+
+
+.noblock {
+    position: fixed;
+    display: none;
+    width: 81%;
+    height: 100%;
+    top: 0%;
+    left: 19%;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: beige;
+
+}
