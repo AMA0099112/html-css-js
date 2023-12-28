@@ -14,7 +14,12 @@ $(document).ready(function () {
     // 点击导航图标显示/隐藏导航列
     $('#menuimg').on('click', function () {
         $('#RWDnav').toggle();
+
     });
+    
+        $('#dropdownRWD').on('click', function () {
+            $('#hohoho').toggle();
+        });
 
     // 点击页面其他地方隐藏导航列
     $(document).on('click', function (event) {
@@ -23,9 +28,15 @@ $(document).ready(function () {
 
         // 判断点击事件的目标元素是否在导航列以外
         if (!navContainer.is(event.target) && !navIcon.is(event.target) && navContainer.has(event.target).length === 0) {
+            if($('#hohoho').is(':visible')){
+                $('#hohoho').hide();
+            }
             navContainer.hide();
+
+
         }
     });
+
 
     document.querySelector('.background-text').addEventListener('wheel', function (e) {
         var element = this;
@@ -63,7 +74,7 @@ $(document).ready(function () {
               <p>心得感想：肝悲</p>
             `).css({
                 'background-color': '#fff1c5',
-                'box-shadow': '20px 20px 2px #cf9647'
+                'box-shadow': '5px 5px 2px #cf9647'
             }).fadeIn();
         });
         // 更改 introduce 內容，例如：這裡假設為陳先生的介紹
@@ -79,7 +90,7 @@ $(document).ready(function () {
           <p>心得感想：ぴえん</p>
         `).css({
                 'background-color': '#ddfccd',
-                'box-shadow': '20px 20px 2px #b0d5a9'
+                'box-shadow': '5px 5px 2px #b0d5a9'
             }).fadeIn();
         });
     });
