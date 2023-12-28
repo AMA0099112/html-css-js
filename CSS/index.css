@@ -61,7 +61,7 @@
 
     .nav-big {
         position: relative;
-        background-color: #d38987;
+        background-color: #c8d387;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -294,7 +294,7 @@
     }
 
     .gif-picture {
-        width: 80%;
+        width: 60%;
         border-radius: 15%;
         transition: all 0.5s ease-out;
         box-shadow: 3px 3px 10px 3px;
@@ -739,7 +739,7 @@
     #content1 h2 {
         font-size: 3rem;
         color: rgb(255, 255, 255);
-        -webkit-text-stroke: 1.5px black;
+        -webkit-text-stroke: 1px black;
         font-family: 'cwTeXYen', sans-serif;
     }
 
@@ -821,7 +821,7 @@
 
     .nav-big {
         position: relative;
-        background-color: #d38987;
+        background-color: #c8d387;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1270,15 +1270,15 @@
 
     .carousel-caption {
         background-color: aliceblue;
-        width: 50px;
-        height: 13%;
+        width: 15%;
+        height: 10%;
         margin: auto;
         margin-bottom: 2%;
         border-radius: 30px;
         font-family: 'cwTeXYen', sans-serif;
         border: 1px solid #000;
         /* 1像素寬，黑色邊框 */
-        padding-bottom: 5px;
+        padding-bottom: 8%;
         /* 可選：增加內邊距，使內容離邊框有些距離 */
 
     }
@@ -1461,7 +1461,7 @@
     #content1 h2 {
         font-size: 4rem;
         color: rgb(255, 255, 255);
-        -webkit-text-stroke: 2px black;
+        -webkit-text-stroke: 1.5px black;
         font-family: 'cwTeXYen', sans-serif;
     }
 
@@ -1800,7 +1800,7 @@
     }
 
     .gif-picture {
-        width: 50%;
+        width: 90%;
         border-radius: 15%;
         transition: all 0.5s ease-out;
         box-shadow: 3px 3px 10px 3px;
@@ -2049,9 +2049,9 @@
         /* Maintain the aspect ratio and cover the container */
     }
 
-    .carousel-caption {
+    .carousel-caption-custom {
         background-color: aliceblue;
-        width: 8%;
+        width: 10%;
         height: 13%;
         margin: auto;
         margin-bottom: 2%;
@@ -2062,6 +2062,10 @@
         padding: 27px;
         /* 可選：增加內邊距，使內容離邊框有些距離 */
 
+    }
+    .text5 {
+        font-size: 1rem;
+        padding: 0;
     }
 
     .scenery {
