@@ -29,32 +29,32 @@
 <body>
     <!--導覽列-->
     <header>
-        <nav class="nav-big">
+        <nav class="nav-big" id="nav-big">
             <img class="img" src="./img/IMG_2828.PNG" alt="LOGO">
             <ul class="nav-list">
                 <li class="nav-list-item">
-                    <a href="#" class="nav-list-item-link">首頁</a>
+                    <a href="#nav-big" class="nav-list-item-link">首頁</a>
                 </li>
                 <li class="nav-list-item dropdown">
                     <a href="#" class="nav-list-item-link dropdown-toggle dropdown">遊戲介紹</a>
                     <div class="hohoho">
-                        <!--<li class="daulian">=--> <a href="#" class="nav">
+                        <!--<li class="daulian">=--> <a href="#background-story" class="nav">
                             <p class="gintro">故事背景</p>
                         </a>
-                        <a href="#" class="nav">
+                        <a href="#scenery" class="nav">
                             <p class="gintro">場景介紹</p>
                         </a>
-                        <a href="#" class="nav">
+                        <a href="#How-to-play-play" class="nav">
                             <p class="gintro">遊玩方式</p>
                         </a>
-                        <a href="#" class="nav cat">
+                        <a href="#cattt" class="nav cat">
                             <p class="gintro">貓咪介紹</p>
                         </a>
                     </div>
                 </li>
 
                 <li class="nav-list-item">
-                    <a href="#" class="nav-list-item-link">關於我們</a>
+                    <a href="#about" class="nav-list-item-link">關於我們</a>
                 </li>
                 <li class="nav-list-item">
                     <a href="home.html" class="nav-list-item-link-play">開始遊戲</a>
@@ -65,25 +65,25 @@
             <div class="RWDnav" id="RWDnav">
                 <a href="#" class="nav-list-item-link">首頁</a>
 
-                <div class="nav-list-item dropdownRWD">
+                <div class="nav-list-item dropdownRWD" id="dropdownRWD">
                     <a href="#" class="nav-list-item-link dropdown-toggle dropdown">遊戲介紹</a>
-                    <div class="hohoho dropdownRWD">
-                        <!--<li class="daulian">=--> <a href="#" class="nav">
+                    <div class="hohoho dropdownRWD" id="hohoho">
+                        <!--<li class="daulian">=--> <a href="#background-story" class="nav">
                             <p class="gintro">故事背景</p>
                         </a>
-                        <a href="#" class="nav">
+                        <a href="#scenery" class="nav">
                             <p class="gintro">場景介紹</p>
                         </a>
-                        <a href="#" class="nav">
+                        <a href="#How-to-play-play" class="nav">
                             <p class="gintro">遊玩方式</p>
                         </a>
-                        <a href="#" class="nav cat">
-                            <p class="gintro">貓咪介紹</p>
+                        <a href="#cattt" class="nav cat">
+                            <p class=" gcat">貓咪介紹</p>
                         </a>
                     </div>
                 </div>
 
-                <a href="#" class="nav-list-item-link">關於我們</a>
+                <a href="#about" class="nav-list-item-link">關於我們</a>
 
 
 
@@ -121,13 +121,9 @@
         </div>
     </div>
 
-    <!--滑動固定圖-->
-    <img class="back-always" src="./img/IMG_2820.PNG" alt="back-always">
-    <img class="back-always2" src="./img/IMG_2820.PNG" alt="back-always">
-
     <!--背景故事-->
     <div class="block2">
-        <div class="background-story">
+        <div class="background-story" id="background-story">
             <div class="title">
                 <h1 class="headone">背景故事</h1>
                 <h6 class="headsix">-background-</h6>
@@ -140,11 +136,11 @@
     </div>
 
     <!--場景介紹-->
-    <div class="block3 scenery"><!--場景標題-->
+    <div class="block3 scenery" id="scenery"><!--場景標題-->
         <h1 class="headone">場景介紹</h1>
         <h6 class="headsix">-Scene introduction-</h6>
     </div>
-    <div class="container custom-carousel-container"><!--場景內容-->
+    <div class="container custom-carousel-container scenerybackground"><!--場景內容-->
         <div id="carouselExampleIndicators" class="carousel slide carousel-dark " data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -162,31 +158,31 @@
                 <div class="carousel-item active">
                     <img src="./img/picture1.png" class="d-block h-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>大門</h5>
+                        <h5 class="text5">大門</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/picture2.png" class="d-block h-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>廚房</h5>
+                        <h5 class="text5">廚房</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/picture3.png" class="d-block h-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>客廳</h5>
+                        <h5 class="text5">客廳</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/picture4.png" class="d-block h-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>浴室</h5>
+                        <h5 class="text5">浴室</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/picture5.png" class="d-block h-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>房間</h5>
+                        <h5 class="text5">房間</h5>
                     </div>
                 </div>
             </div>
@@ -206,7 +202,7 @@
     <!--遊玩方式-->
     <div class="block4">
         <!--標題-->
-        <div class="How-to-play-play">
+        <div class="How-to-play-play" id="How-to-play-play">
             <h1 class="headone">遊玩方式</h1>
             <h6 class="headsix">-How to play-</h6>
         </div>
@@ -274,7 +270,7 @@
     </div>
 
     <!--關於我們-->
-    <div class="block6 about"><!--關於我們標題-->
+    <div class="block6 about" id="about"><!--關於我們標題-->
         <h1 class="headone">關於我們</h1>
         <h6 class="headsix">-About Us-</h6>
     </div>
