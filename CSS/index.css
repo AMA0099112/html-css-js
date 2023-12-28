@@ -3,19 +3,17 @@
         margin: 0%;
         padding: 0%;
     }
-
     /*滑動固定圖*/
-    .back-always {
-        position: fixed;
-        top: 0%;
-        z-index: -1000;
+    body {
+        background-image: url('../img/IMG_2820.PNG');
+        background-size: 100% auto; /* 自动宽度，100% 高度，以填满页面 */
+        background-repeat: repeat-y; /* 在垂直方向上重复 */
+        background-position: center; /* 图片在背景中的位置，这里是居中 */
+        background-attachment: fixed; /* 防止背景滚动 */
     }
 
-    .back-always2 {
-        position: fixed;
-        bottom: 0%;
-        z-index: -1000;
-    }
+
+
 
     /*導覽列*/
     .nav-list {
@@ -29,6 +27,7 @@
 
     .img {
         padding: 1%;
+        width: 20%;
     }
 
     .nav-list-item {
@@ -49,10 +48,6 @@
         text-decoration: none;
         color: #FFFFFF;
         padding: 10px;
-        margin-top: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 20px;
     }
 
 
@@ -89,7 +84,7 @@
         position: absolute;
         right: 0%;
         top: 100%;
-        width: 20%;
+        width: 5%;
 
         padding: 0px;
         /* 添加一些内边距，使内容不会太靠边 */
@@ -112,10 +107,8 @@
 
     }
 
-    .dropdownRWD:hover .hohoho {
-        display: block;
-        /*將區塊顯示*/
-    }
+
+
 
 
     .nav {
@@ -188,6 +181,7 @@
         display: block;
         background-color: #ff6b6b;
         margin: auto;
+        padding: 1%;
         border-radius: 30px;
         color: white;
 
@@ -300,16 +294,18 @@
     }
 
     .gif-picture {
-        width: 100%;
+        width: 80%;
         border-radius: 15%;
         transition: all 0.5s ease-out;
         box-shadow: 3px 3px 10px 3px;
         overflow: hidden;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        margin-top: 10%;
     }
 
     .allgif {
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
     }
@@ -336,7 +332,9 @@
     }
 
 
-    .click {}
+    .click {
+        margin: 0;
+    }
 
 
 
@@ -349,6 +347,7 @@
         background-color: #D6E1CE;
         width: auto;
         height: auto;
+        padding-top: 2%;
     }
 
     .everybody {
@@ -439,15 +438,19 @@
 
 
     /*字體大小*/
+    .computer {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 0.5rem;
+    }
 
     .hohoho {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         font-family: 'cwTeXYen', sans-serif;
     }
 
     .nav-list-item-link {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .nav-list-item-link-play {
@@ -455,56 +458,49 @@
         font-size: 1rem;
     }
 
-    .daulian {
-        font-family: 'cwTeXYen', sans-serif;
-        font-size: 2rem;
-
-    }
-
     .playgame {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 5rem;
+        font-size: 1rem;
     }
 
     .text {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     .headone {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 
     .headsix {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     .background-text {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     .click {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .click2 {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
-
-    .How-to-play-text-two {
+    .down-footer{
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 0.5rem;
     }
 
 
     /*靖瑜*/
     .down {
-        width: 20%;
+        width: 15%;
         height: auto;
         background-color: #ffffff;
         display: block;
@@ -592,35 +588,39 @@
     }
 
     .us {
-        display: flex;
+
         align-items: center;
         justify-content: center;
         background: #F8FED2;
+        height: auto;
+        padding: 0% 0% 5% 0%;
     }
 
     .bighead {
-        width: 30%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        margin: 2% 5% 2% 0%;
+        justify-content: center;
+
+
         /* 可選：調整左邊大頭貼和介紹之間的間距 */
     }
 
     .chen,
     .weng {
-        width: 90%;
+        width: 30%;
         height: auto;
         border-radius: 50%;
         /* 使圖片呈圓形 */
-        border: 3px solid #ffd77f;
-        margin: 10% 0%;
-        box-shadow: 20px 20px 2px #dfca3c9f;
+        border: 3px solid #ffe6b1;
+        margin: 5% 7%;
+        box-shadow: 5px 5px 2px #dfca3c9f;
     }
 
     .weng {
         border: 3px solid #d4e6c4;
-        box-shadow: 20px 20px 2px #90cca8;
+        box-shadow: 5px 5px 2px #90cca8;
     }
 
 
@@ -639,19 +639,20 @@
     }
 
     .introduce {
-        width: 40%;
+        width: 80%;
+        margin: auto;
         /* 可選：設定介紹的最大寬度 */
         height: auto;
         background: #fff1c5;
         padding: 2%;
         border-radius: 20px;
-        box-shadow: 20px 20px 2px #cf9647;
+        box-shadow: 5px 5px 2px #cf9647;
 
     }
 
     .introduce p {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
 
     .cattt {
@@ -678,30 +679,11 @@
     }
 
 
-
     .right {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-
-
-
-
-
-
-    @keyframes slideInLeft {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
     }
 
     .left {
@@ -755,16 +737,16 @@
 
     /* Additional styles for content animation */
     #content1 h2 {
-        font-size: 6rem;
+        font-size: 3rem;
         color: rgb(255, 255, 255);
-        -webkit-text-stroke: 2px black;
+        -webkit-text-stroke: 1.5px black;
         font-family: 'cwTeXYen', sans-serif;
     }
 
     #content1 p {
         font-family: 'cwTeXYen', sans-serif;
         color: rgb(0, 0, 0);
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 
@@ -795,7 +777,7 @@
 
     /*導覽列*/
     .nav-list {
-        display: none;
+        display: flex;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -805,6 +787,7 @@
 
     .img {
         padding: 1%;
+        width: 15%;
     }
 
     .nav-list-item {
@@ -825,16 +808,12 @@
         text-decoration: none;
         color: #FFFFFF;
         padding: 10px;
-        margin-top: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 20px;
     }
 
 
 
     .nav-list-item-link:hover {
-        color: #68856b;
+        color: #727b73;
     }
 
 
@@ -842,32 +821,54 @@
 
     .nav-big {
         position: relative;
-        background-color: #294672;
+        background-color: #d38987;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
     }
 
-    .hohoho {
+    .nav-list {
+        display: none;
+    }
+
+    .menuimg {
+        width: 50px;
+    }
+
+    .RWDnav {
         display: none;
         background-color: #a0a970;
-        min-width: 160px;
+        min-width: 200px;
         z-index: 1;
         position: absolute;
-        width: 20%;
+        right: 0%;
+        top: 100%;
+        width: 5%;
 
-        padding: 10px;
+        padding: 0px;
         /* 添加一些内边距，使内容不会太靠边 */
         z-index: 1000;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
 
-    .dropdown:hover .hohoho {
-        display: block;
-        /*將區塊顯示*/
+
+    .hohoho {
+        display: none;
+        background-color: #ccd3a2;
+        min-width: 200px;
+        z-index: 1;
+        position: relative;
+        width: 20%;
+        padding: 10px;
+        /* 添加一些内边距，使内容不会太靠边 */
+        z-index: 1000;
+
     }
+
+
+
 
 
     .nav {
@@ -887,29 +888,6 @@
         color: #68856b;
     }
 
-
-
-    .searching {
-        display: flex;
-    }
-
-    .botton {
-        background-color: #68856b00;
-        border: 0;
-        margin-top: 13%;
-        height: 45px;
-    }
-
-    #search {
-        width: 100%;
-        height: 25%;
-        padding-left: 3%;
-        padding-top: 7%;
-        padding-bottom: 7%;
-        margin-top: 15%;
-        border-radius: 50px;
-        border: 2px solid rgba(110, 183, 43, 0.708);
-    }
 
 
     .nav-list-item-link-play {
@@ -935,8 +913,6 @@
     .nav-list-item-link-play:active:hover {
         color: rgba(181, 181, 3, 0.655);
     }
-
-
     /*立即開始*/
     .computer {
         display: block;
@@ -1036,16 +1012,11 @@
     }
 
     .gif-picture {
-        width: 100%;
-        border-radius: 15%;
-        transition: all 0.5s ease-out;
-        box-shadow: 3px 3px 10px 3px;
-        overflow: hidden;
-        margin-bottom: 10%;
-    }
+        width: 70%;}
 
     .allgif {
         display: flex;
+        flex-direction: row;
         width: 100%;
         justify-content: center;
     }
@@ -1209,63 +1180,43 @@
     /*字體大小*/
     .computer {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .nav-list-item-link {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
-    }
-
-    .nav-list-item-link-play {
-        font-family: 'cwTeXYen', sans-serif;
         font-size: 1rem;
     }
 
-    .daulian {
-        font-family: 'cwTeXYen', sans-serif;
-        font-size: 2rem;
-
-    }
-
-    .playgame {
-        font-family: 'cwTeXYen', sans-serif;
-        font-size: 5rem;
-    }
 
     .text {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .headone {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .headsix {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .background-text {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .click {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .click2 {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1rem;
-    }
-
-    .How-to-play-text-two {
-        font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
 
 
@@ -1319,7 +1270,7 @@
 
     .carousel-caption {
         background-color: aliceblue;
-        width: 8%;
+        width: 50px;
         height: 13%;
         margin: auto;
         margin-bottom: 2%;
@@ -1327,9 +1278,13 @@
         font-family: 'cwTeXYen', sans-serif;
         border: 1px solid #000;
         /* 1像素寬，黑色邊框 */
-        padding: 27px;
+        padding-bottom: 5px;
         /* 可選：增加內邊距，使內容離邊框有些距離 */
 
+    }
+    .text5 {
+        font-size: 1rem;
+        padding: 0;
     }
 
     .scenery {
@@ -1370,7 +1325,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2% 5% 2% 0%;
+        margin: 2% 5% 2% 5%;
         /* 可選：調整左邊大頭貼和介紹之間的間距 */
     }
 
@@ -1418,7 +1373,7 @@
 
     .introduce p {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .cattt {
@@ -1451,24 +1406,6 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-
-
-
-
-
-
-    @keyframes slideInLeft {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
     }
 
     .left {
@@ -1522,7 +1459,7 @@
 
     /* Additional styles for content animation */
     #content1 h2 {
-        font-size: 6rem;
+        font-size: 4rem;
         color: rgb(255, 255, 255);
         -webkit-text-stroke: 2px black;
         font-family: 'cwTeXYen', sans-serif;
@@ -1575,6 +1512,7 @@
     }
 
     .img {
+        width: 8%;
         padding: 1%;
     }
 
@@ -1624,7 +1562,7 @@
     .hohoho {
         display: none;
         background-color: #a0a970;
-        min-width: 160px;
+        min-width: 250px;
         z-index: 1;
         position: absolute;
         width: 20%;
@@ -1655,6 +1593,9 @@
 
     .gintro {
         margin: auto;
+    }
+    .gcat{
+        margin: 0;
     }
 
     .cat:hover {
@@ -1754,7 +1695,7 @@
         width: 30%;
         position: absolute;
         text-align: center;
-        margin: 37% 35% 0 35%;
+        margin: 35% 35% 5% 35%;
         padding: 2% 0 2% 0;
         box-shadow: 0px 0px 0px 1px;
     }
@@ -1790,15 +1731,15 @@
     .background-text {
         position: absolute;
         text-align: center;
-        width: 60%;
+        width: 50%;
 
-        max-height: 400px;
+        max-height: 500px;
         overflow: hidden;
         /* 隐藏溢出部分 */
         background-color: #f4f6f3;
         border-radius: 20px;
         padding: 5%;
-        margin: 15% 20% 0 20%;
+        margin: 15% 25% 0 25%;
 
         overflow-y: auto;
         opacity: 0.6;
@@ -1859,6 +1800,7 @@
     }
 
     .gif-picture {
+        width: 50%;
         border-radius: 15%;
         transition: all 0.5s ease-out;
         box-shadow: 3px 3px 10px 3px;
@@ -1911,13 +1853,14 @@
     .everybody {
         display: flex;
         flex-direction: row;
-        margin: 5% 20%;
+        width: 70%;
+        margin: auto;
         padding-top: 2%;
     }
 
     .pandt {
         display: flex;
-        width: 60%;
+        width: 70%;
     }
 
     .everybody-can-play {
@@ -1940,7 +1883,7 @@
     .link {
         display: flex;
         background-color: #D6E1CE;
-        width: auto;
+        width: 30%;
         margin: 0;
     }
 
@@ -2016,15 +1959,10 @@
         font-size: 1.5rem;
     }
 
-    .daulian {
-        font-family: 'cwTeXYen', sans-serif;
-        font-size: 2rem;
-
-    }
 
     .playgame {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .text {
@@ -2049,7 +1987,7 @@
 
     .click {
         font-family: 'cwTeXYen', sans-serif;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .click2 {
@@ -2160,17 +2098,17 @@
     }
 
     .bighead {
-        width: 30%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2% 5% 2% 0%;
+        margin: 0% 5% 0% 0%;
         /* 可選：調整左邊大頭貼和介紹之間的間距 */
     }
 
     .chen,
     .weng {
-        width: 70%;
+        width: 40%;
         height: auto;
         border-radius: 50%;
         /* 使圖片呈圓形 */
