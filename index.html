@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+    <!--RWD-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>onePage</title>
-
     <!--CSS連結-->
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
@@ -16,6 +17,9 @@
     <script src="JS/index.js"></script>
     <!--bootstrap-->
     <link rel="stylesheet" href="./bootstrap-5.0.0-dist/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- 添加 Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
@@ -26,52 +30,92 @@
     <!--導覽列-->
     <header>
         <nav class="nav-big">
+            <img class="img" src="./img/IMG_2828.PNG" alt="LOGO">
             <ul class="nav-list">
-                <img class="img" src="./img/IMG_2828.PNG" alt="LOGO">
                 <li class="nav-list-item">
                     <a href="#" class="nav-list-item-link">首頁</a>
                 </li>
-                <li class="nav-list-item">
-                    <a href="#" class="nav-list-item-link dropdown-toggle ">遊戲介紹</a>
-                    <ul class="nav-sub-list" aria-labelledby="dropdownMenu2">
-                        <a href="#" class="daulian">
-                            <li class="nav">故事背景</li>
+                <li class="nav-list-item dropdown">
+                    <a href="#" class="nav-list-item-link dropdown-toggle dropdown">遊戲介紹</a>
+                    <div class="hohoho">
+                        <!--<li class="daulian">=--> <a href="#" class="nav">
+                            <p class="gintro">故事背景</p>
                         </a>
-                        <a href="#" class="daulian">
-                            <li class="nav">場景介紹</li>
+                        <a href="#" class="nav">
+                            <p class="gintro">場景介紹</p>
                         </a>
-                        <a href="#" class="daulian">
-                            <li class="nav">遊玩方式</li>
+                        <a href="#" class="nav">
+                            <p class="gintro">遊玩方式</p>
                         </a>
-                        <a href="#" class="daulian cat">
-                            <li class="nav">貓咪介紹</li>
+                        <a href="#" class="nav cat">
+                            <p class="gintro">貓咪介紹</p>
                         </a>
-                    </ul>
+                    </div>
                 </li>
+
                 <li class="nav-list-item">
                     <a href="#" class="nav-list-item-link">關於我們</a>
-                </li>
-                <li class="nav-list-item searching">
-                    <input class="form-control me-2" type="search" id="search" title="輸入搜尋字詞" placeholder="Search..."
-                        aria-label="Search">
-                    <button class="botton" type="submit"><img src="./img/search.png" alt="search"></button>
                 </li>
                 <li class="nav-list-item">
                     <a href="home.html" class="nav-list-item-link-play">開始遊戲</a>
                 </li>
+                </div>
             </ul>
+            <!--RWD-->
+            <div class="RWDnav" id="RWDnav">
+                <a href="#" class="nav-list-item-link">首頁</a>
+
+                <div class="nav-list-item dropdownRWD">
+                    <a href="#" class="nav-list-item-link dropdown-toggle dropdown">遊戲介紹</a>
+                    <div class="hohoho dropdownRWD">
+                        <!--<li class="daulian">=--> <a href="#" class="nav">
+                            <p class="gintro">故事背景</p>
+                        </a>
+                        <a href="#" class="nav">
+                            <p class="gintro">場景介紹</p>
+                        </a>
+                        <a href="#" class="nav">
+                            <p class="gintro">遊玩方式</p>
+                        </a>
+                        <a href="#" class="nav cat">
+                            <p class="gintro">貓咪介紹</p>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-list-item-link">關於我們</a>
+
+
+
+            </div>
+            <a class="menu" id="menu" href="#"><img class="menuimg" id="menuimg" src="./img/menu.png" alt="menu"></a>
+
+
+
         </nav>
+
     </header>
+
+
+
+
+
+
+    <!--向下滑標示-->
+    <img class="down" id="down" src=".\img\down-arrow.png" alt="">
+
 
     <!--立即開始-->
     <div class="block1">
         <div class="quick-start">
             <div class="big-logo-center">
                 <img class="big-logo" src="./img/IMG_2831.PNG" alt="big-logo">
+                <p class="computer big-logo" id="computer">請使用電腦裝置遊玩</p>
             </div>
             <a href="home.html" class="playgame">
                 <p class="word">立即開始</p>
             </a>
+
             <img class="start" src="./img/IMG_2833.PNG" alt="start page">
 
         </div>
@@ -80,6 +124,7 @@
     <!--滑動固定圖-->
     <img class="back-always" src="./img/IMG_2820.PNG" alt="back-always">
     <img class="back-always2" src="./img/IMG_2820.PNG" alt="back-always">
+
     <!--背景故事-->
     <div class="block2">
         <div class="background-story">
@@ -94,62 +139,169 @@
         </div>
     </div>
 
+    <!--場景介紹-->
+    <div class="block3 scenery"><!--場景標題-->
+        <h1 class="headone">場景介紹</h1>
+        <h6 class="headsix">-Scene introduction-</h6>
+    </div>
+    <div class="container custom-carousel-container"><!--場景內容-->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/picture1.png" class="d-block h-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>大門</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/picture2.png" class="d-block h-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>廚房</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/picture3.png" class="d-block h-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>客廳</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/picture4.png" class="d-block h-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>浴室</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/picture5.png" class="d-block h-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>房間</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
     <!--遊玩方式-->
-    <div class="block3">
+    <div class="block4">
         <!--標題-->
         <div class="How-to-play-play">
             <h1 class="headone">遊玩方式</h1>
             <h6 class="headsix">-How to play-</h6>
         </div>
-        <!--圖片-->
-        <div class="gif">
-            <img class="gif-picture" src="./img/地圖頁.gif" alt="map">
-            <img class="gif-picture" src="./img/點擊.gif" alt="click">
-            <img class="gif-picture" src="./img/密碼.gif" alt="code">
-        </div>
-        <!--遊玩說明-->
-        <div class="How-to-play-text">
-            <p class="click">地圖切換</p>
-            <p class="click">點擊探索</p>
-            <p class="click">解密逃出</p>
-        </div>
-        <div class="How-to-play-text-two">
-            <p class="click2">選擇地圖進入各式場景</p>
-            <p class="click2">隨意選擇物品觸發開關</p>
-            <p class="click2">輸入密碼才能逃出生天</p>
+        <div class="allgif">
+            <!--地圖切換-->
+            <div class="mapchange">
+                <img class="gif-picture" src="./img/地圖頁.gif" alt="map">
+                <p class="click">地圖切換</p>
+                <p class="click2">選擇地圖進入各式場景</p>
+            </div>
+            <!--點擊探索-->
+            <div class="clicksearch">
+                <img class="gif-picture" src="./img/點擊.gif" alt="click">
+                <p class="click">點擊探索</p>
+                <p class="click2">隨意選擇物品觸發開關</p>
+            </div>
+            <!--解密逃出-->
+            <div class="escapeentrance">
+                <img class="gif-picture" src="./img/密碼.gif" alt="code">
+                <p class="click">解密逃出</p>
+                <p class="click2">輸入密碼才能逃出生天</p>
+            </div>
         </div>
     </div>
 
+    <!--貓咪介紹-->
+    <div class="block5 cattt" id="cattt"><!--標題-->
+        <h1 class="headone">貓咪介紹</h1>
+        <h6 class="headsix">-Cat introductions-</h6>
+    </div>
+    <div class="catttmono">
+        <!-- 右邊咚咚 -->
+        <div class="left" id="left">
+            <div class="leftimg"><img id="image1" class="catimage" src=".\img\1ai.png" alt="Image 1"></div>
 
-    <!--firebase測試-->
-    <h1>留言板</h1>
-    <!-- 留言列表 -->
-    <div id="message-input">
-        <h2>留言输入</h2>
-        <form id="message-form">
-            <label for="name">姓名:</label>
-            <input type="text" id="name" required>
-            <br>
-            <label for="message">留言:</label>
-            <textarea id="message" required></textarea>
-            <br>
-            <button type="submit">提交留言</button>
-        </form>
+            <div id="content1" class="catintroduce" data-title="小埃" data-description="———喜歡藏在布料之中"
+                data-additional=" 去埃及旅遊時遇到的貓咪，回程時居然偷偷躲在了行李箱中，一不小心就被帶回來的貓咪。 "></div>
+        </div>
+        <!-- 左邊咚咚 -->
+
+        <div class="thumbnails right">
+            <img id="ai" class="thumbnail" src=".\img\1ai.png" alt="" data-image=".\img\1ai.png" data-title="小埃"
+                data-description="———喜歡藏在布料之中" data-additional=" 去埃及旅遊時遇到的貓咪，回程時居然偷偷躲在了行李箱中，一不小心就被帶回來的貓咪。 ">
+            <img id="hitomi" class="thumbnail" src=".\img/2hitomi.png" alt="" data-image=".\img/2hitomi.png"
+                data-title="瞳" data-description="———喜歡躲在陰暗的角落"
+                data-additional=" 在野外撿回來的流浪貓，到現在還是不太親人，很少出現在人眼前，常常躲在角落偷偷瞪著你。 ">
+            <img id="lele" class="thumbnail" src="./img/3lele.png" alt="" data-image="./img/3lele.png" data-title="樂樂 "
+                data-description="———喜歡在溫暖顏色的地方"
+                data-additional=" 與妙妙是雙胞胎，出生在巫師的家庭，從小就喜歡帶著巫師帽到處走，雖然看起來很疲倦但總是會面帶笑容出現在大家面前，但自從巫師過世之後就被現在的主人收養。  ">
+            <img id="conan" class="thumbnail" src="./img/4conan.PNG" alt="" data-image="./img/4conan.PNG"
+                data-title="科南" data-description="———好冷好冷" data-additional=" 因為胸前有個紅色蝴蝶結，因此取名為科南。非常怕冷，會在覺得太冷時跳出來跟你抗議 ">
+            <img id="meow" class="thumbnail" src="./img/5meow.png" alt="" data-image="./img/5meow.png" data-title="妙妙"
+                data-description="———喜歡在??"
+                data-additional="  與樂樂是雙胞胎，出生在巫師的家庭，從小就喜歡帶著巫師帽，對世界萬物都感到好奇也很活潑，在巫師過世之後被被現在的主人收養。 ">
+            <img id="kuro" class="thumbnail" src="./img/6kuro.png" alt="" data-image="./img/6kuro.png" data-title="小黑"
+                data-description="———小朋友才做選擇，每個地方我都愛"
+                data-additional=" 是整個家中最正常的貓咪，也是所有貓咪中的老大，會出現在任何地方看著其他貓咪有沒有亂動主人的東西。 ">
+            <img id="black" class="thumbnail" src="./img/7black.png" alt="" data-image="./img/7black.png"
+                data-title="阿黑" data-description="———喜歡到處跑來跑去"
+                data-additional=" 跟小黑是一起領養來的，從外觀上很難分辨，但個性比小黑好動的多，通常在家中會站著亂跑的都是阿黑。 ">
+
+            <!-- Add more thumbnails as needed -->
+        </div>
+
     </div>
 
-    <div id="message-list">
-        <h2>留言列表</h2>
-        <ul id="messages"></ul>
+    <!--關於我們-->
+    <div class="block6 about"><!--關於我們標題-->
+        <h1 class="headone">關於我們</h1>
+        <h6 class="headsix">-About Us-</h6>
     </div>
+    <div class="us"><!--關於我們內容-->
+        <div class="bighead">
+            <img class="chen" id="chen" src=".\img\chenhead.PNG" alt="">
+            <img class="weng" id="weng" src="./img/goldfish.PNG" alt="">
+        </div>
+        <div class="introduce" id="introduce">
+            <p>姓名：陳怡蒨</p>
+            <p>性別：女</p>
+            <p>專長：彈吉他</p>
+            <p>心得感想：肝悲</p>
+        </div>
+    </div>
+
 
 
 
     <!--footer-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="everybody">
-            <div class="everybody-can-play"><img class="poopian" src="./img/w1200.jpg" alt="everybody can play">
+            <div class="pandt">
+                <img class="poopian" src="./img/w1200.jpg" alt="everybody can play">
+                <div class="text">本遊戲為免費使用，遊戲內”不”提供購買虛擬貨幣、物品等付費服務。請注意遊戲時間，避免沉迷。本遊戲情節不涉及性、暴力。</div>
+
             </div>
-            <div class="text">本遊戲為免費使用，遊戲內”不”提供購買虛擬貨幣、物品等付費服務。請注意遊戲時間，避免沉迷。本遊戲情節不涉及性、暴力。</div>
             <div class="link">
                 <a href="#" class="list-item"><img class="list-item-link" src="./img/discord.png" alt="discord"></a>
                 <a href="#" class="list-item"><img class="list-item-link" src="./img/facebook.png" alt="facebook"></a>
@@ -158,6 +310,7 @@
                         alt="it is a bird"></a>
                 <a href="#" class="list-item"><img class="list-item-link" src="./img/youtube.png" alt="youtube"></a>
             </div>
+
         </div>
         <hr class="line">
         <!--各種logo-->

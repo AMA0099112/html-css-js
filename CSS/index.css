@@ -1,452 +1,2338 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
-/*滑動固定圖*/
-.back-always {
-    position: fixed;
-    top: 0%;
-    z-index: -1000;
-}
-
-.back-always2 {
-    position: fixed;
-    bottom: 0%;
-    z-index: -1000;
-}
-
-/*導覽列*/
-.nav-list {
-    background-color: #c8d387;
-    display: flex;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-}
-
-.img {
-    padding: 1%;
-    margin-left: 2%;
-}
-
-.nav-list-item {
-    /*去除標籤*/
-    list-style: none;
-    margin-top: 1%;
-    margin-left: 1.5%;
-    margin-right: 2.5%;
-}
-
-.nav-list-item:hover .nav-sub-list {
-    display: block;
-}
-
-.nav-list-item-link {
-    display: block;
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 10px;
-    margin: 20px;
-}
-
-.nav-list-item-link:hover {
-    color: #68856b;
-}
-
-.nav-sub-list {
-    /*去除標籤*/
-    list-style: none;
-    display: none;
-    background-color: #a0a970;
-    margin: 0% 1%;
-    width: 17%;
-    padding: 0%;
-    position: absolute;
-    z-index: 1000;
-    left: 22%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.nav {
-    padding: 10% 22.8% !important;
-
-}
-
-.cat:hover {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.nav:hover {
-
-    color: #68856b;
-}
-
-.daulian {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-
-.daulian:hover {
-    background-color: #f0ffe7b2;
-}
-
-
-
-.searching {
-    display: flex;
-}
-
-.botton {
-    background-color: #68856b00;
-    border: 0;
-    margin-top: 13%;
-    height: 45px;
-}
-
-#search {
-    width: 100%;
-    height: 25%;
-    padding-left: 3%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    margin-top: 15%;
-    border-radius: 50px;
-    border: 2px solid rgba(110, 183, 43, 0.708);
-}
-
-
-.nav-list-item-link-play {
-    display: block;
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 10px;
-    margin: 20px;
-    background-color: #88B65A;
-    border: 3px solid black;
-    border-radius: 60px;
-}
-
-.nav-list-item-link-play:hover {
-    background-color: rgba(246, 208, 40, 0.637);
-    color: rgb(255, 255, 255);
-}
-
-.nav-list-item-link-play:active {
-    box-shadow: 3px 3px 10px 3px inset;
-}
-
-.nav-list-item-link-play:active:hover {
-    color: rgba(181, 181, 3, 0.655);
-}
-
-/*立即開始*/
-
-.block1 {
-    background-color: #c5eead;
-}
-
-.big-logo-center {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-}
-
-.big-logo {
-    width: 50%;
-    height: auto;
-    margin-top: 1%;
-    filter: saturate(120%);
-}
-
-.start {
-    width: 100%;
-    height: auto;
-}
-
-.playgame {
-    display: block;
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #88B65A;
-    border: 3px solid black;
-    border-radius: 60px;
-    width: 30%;
-    position: absolute;
-    text-align: center;
-    margin: 37% 35% 0 35%;
-    padding: 2% 0 2% 0;
-    box-shadow: 0px 0px 0px 1px;
-}
-
-.playgame:hover {
-    background-color: rgba(246, 208, 40, 0.637);
-    color: rgb(255, 255, 255);
-}
-
-.playgame:active {
-    box-shadow: 3px 3px 10px 3px inset;
-}
-
-.playgame:active:hover {
-    color: rgba(181, 181, 3, 0.655);
-}
-
-/*背景故事*/
-.block2 {
-    margin-top: 3%;
-}
-
-.background-text {
-    position: absolute;
-    text-align: center;
-    width: 47%;
-    background-color: #f4f6f3;
-    border-radius: 20px;
-    padding: 5%;
-    margin: 15% 0 0 27%;
-    opacity: 0.6;
-    transition: all 0.5s ease-out;
-}
-
-.background-text:hover {
-    opacity: 1;
-    transform: scale(1.1, 1.1);
-    transition: all 0.5s ease-out;
-    box-shadow: 0px 0px 15px 10px #d3e2c4;
-    overflow: hidden;
-
-}
-
-.background-page {
-    width: 100%;
-    height: auto;
-}
-
-
-.title {
-    position: absolute;
-    width: 100%;
-    margin-top: 2%;
-}
-
-.headone {
-    text-align: center;
-}
-
-.headsix {
-    text-align: center;
-}
-
-/*遊玩方式*/
-.block3 {
-    margin-top: 3%;
-    background-color: #e6e4ad;
-    padding-bottom: 3%;
-
-}
-
-
-.How-to-play-play {
-    background-color: #EFF986;
-}
-
-.gif {
-    display: flex;
-    width: 70%;
-    height: auto;
-    margin: auto;
-    padding-top: 3%;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.gif-picture {
-    border-radius: 15%;
-    transition: all 0.5s ease-out;
-    box-shadow: 3px 3px 10px 3px;
-    overflow: hidden;
-
-}
-
-.gif-picture:hover {
-    transform: scale(1.2);
-    transition: all 0.5s ease-out;
-}
-
-.How-to-play-text {
-    display: flex;
-    display: flex;
-    width: 79%;
-    height: auto;
-    margin: auto;
-    padding-top: 1%;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.click {
-    margin: auto;
-}
-
-.How-to-play-text-two {
-    display: flex;
-    display: flex;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    padding-bottom: 3%;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.click2 {
-    margin: auto;
-}
-
-/*footer*/
-.footer {
-    background-color: #D6E1CE;
-}
-
-.everybody {
-    display: flex;
-    margin-bottom: 2%;
-    margin-left: 10%;
-}
-
-.everybody-can-play {
-    margin-top: 1%;
-}
-
-.poopian {
-    margin-top: 10%;
-    margin-left: 60%;
-    width: 35%;
-    height: auto;
-    border-radius: 10%;
-}
-
-.text {
-    margin-top: 3%;
-    width: 27%;
-    margin-left: 3%;
-}
-
-.link {
-    display: flex;
-    background-color: #D6E1CE;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-
-.list-item {
-    display: block;
-    transform: scale(1.2);
-    padding-top: 2%;
-    padding-left: 1.3%;
-    margin-left: 10%;
-}
-
-.line {
-    width: 47%;
-    border: 1px solid black;
-    margin-left: 25%;
-    margin-bottom: 2%;
-}
-
-.footer-picture {
-    display: flex;
-    margin-right: 10%;
-    margin-left: 10%;
-    justify-content: center;
-    margin-bottom: 3%;
-    width: 80%;
-}
-
-.game-name {
-    display: block;
-    width: 20%;
-    height: auto;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-.dtd {
-    display: block;
-    width: 18%;
-    height: auto;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-.logo {
-    display: block;
-    width: 16%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.down-footer {
-    background-color: #929A63;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 1%;
-    border-radius: 0%;
-}
-
-
-/*字體大小*/
-.nav-list-item-link {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 2rem;
-}
-
-.nav-list-item-link-play {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 1.5rem;
-}
-
-.daulian {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 2rem;
-
-}
-
-.playgame {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 5rem;
-}
-
-.text {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 1rem;
-}
-
-.headone {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 4rem;
-}
-
-.headsix {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 1em;
-}
-
-.background-text {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 2rem;
-}
-
-.click {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 2.2rem;
-}
-
-.How-to-play-text-two {
-    font-family: 'cwTeXYen', sans-serif;
-    font-size: 1.5rem;
-}
+@media (min-width: 0px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /*滑動固定圖*/
+    .back-always {
+        position: fixed;
+        top: 0%;
+        z-index: -1000;
+    }
+
+    .back-always2 {
+        position: fixed;
+        bottom: 0%;
+        z-index: -1000;
+    }
+
+    /*導覽列*/
+    .nav-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+
+    }
+
+    .img {
+        padding: 1%;
+    }
+
+    .nav-list-item {
+        /*去除標籤*/
+        list-style: none;
+        margin: 1% 0% 0% 0%;
+
+    }
+
+    .dropdown {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .nav-list-item-link {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .nav-list-item-link:hover {
+        color: #727b73;
+    }
+
+
+
+
+    .nav-big {
+        position: relative;
+        background-color: #d38987;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .menuimg {
+        width: 50px;
+    }
+
+    .RWDnav {
+        display: none;
+        background-color: #a0a970;
+        min-width: 160px;
+        z-index: 1;
+        position: absolute;
+        right: 0%;
+        top: 100%;
+        width: 20%;
+
+        padding: 0px;
+        /* 添加一些内边距，使内容不会太靠边 */
+        z-index: 1000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+
+    .hohoho {
+        display: none;
+        background-color: #ccd3a2;
+        min-width: 160px;
+        z-index: 1;
+        position: relative;
+        width: 20%;
+        padding: 10px;
+        /* 添加一些内边距，使内容不会太靠边 */
+        z-index: 1000;
+
+    }
+
+    .dropdownRWD:hover .hohoho {
+        display: block;
+        /*將區塊顯示*/
+    }
+
+
+    .nav {
+        display: block;
+        width: 120%;
+        margin: 0%;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .cat:hover {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .nav:hover {
+        color: #68856b;
+    }
+
+
+    .searching {
+        display: flex;
+    }
+
+    .botton {
+        background-color: #68856b00;
+        border: 0;
+        margin-top: 13%;
+        height: 45px;
+    }
+
+    #search {
+        width: 100%;
+        height: 25%;
+        padding-left: 3%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        margin-top: 15%;
+        border-radius: 50px;
+        border: 2px solid rgba(110, 183, 43, 0.708);
+    }
+
+
+    .nav-list-item-link-play {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin: 20px;
+        background-color: #88B65A;
+        border: 3px solid black;
+        border-radius: 60px;
+    }
+
+    .nav-list-item-link-play:hover {
+        background-color: rgba(246, 208, 40, 0.637);
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-list-item-link-play:active {
+        box-shadow: 3px 3px 10px 3px inset;
+    }
+
+    .nav-list-item-link-play:active:hover {
+        color: rgba(181, 181, 3, 0.655);
+    }
+
+    /*立即開始*/
+    .computer {
+        display: block;
+        background-color: #ff6b6b;
+        margin: auto;
+        border-radius: 30px;
+        color: white;
+
+    }
+
+    .block1 {
+        background-color: #c5eead;
+    }
+
+    .big-logo-center {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .big-logo {
+        width: 50%;
+        height: auto;
+        margin-top: 1%;
+        filter: saturate(120%);
+    }
+
+    .start {
+        width: 100%;
+    }
+
+    .playgame {
+        display: none;
+    }
+
+
+
+
+    /*背景故事*/
+    .title {
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .block2 {
+        margin-top: 3%;
+    }
+
+    .background-text {
+        position: absolute;
+        text-align: center;
+        width: 70%;
+        max-height: 80px;
+        overflow: hidden;
+        /* 隐藏溢出部分 */
+        background-color: #f4f6f3;
+        border-radius: 20px;
+        padding: 4%;
+        margin: 30% 15% 0 15%;
+        opacity: 1;
+        overflow-y: auto;
+        /* 使用滚动条处理溢出内容 */
+    }
+
+
+    .background-page {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .title {
+        position: absolute;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .headone {
+        text-align: center;
+    }
+
+    .headsix {
+        text-align: center;
+    }
+
+    /*遊玩方式*/
+    .block4 {
+        margin-top: 3%;
+        background-color: #e6e4ad;
+        padding-bottom: 3%;
+
+    }
+
+
+    .How-to-play-play {
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+        background-color: #EFF986;
+    }
+
+    .gif-picture {
+        width: 100%;
+        border-radius: 15%;
+        transition: all 0.5s ease-out;
+        box-shadow: 3px 3px 10px 3px;
+        overflow: hidden;
+        margin-bottom: 10%;
+    }
+
+    .allgif {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /*地圖切換*/
+    .mapchange {
+        display: block;
+        text-align: center;
+        margin: 3%;
+    }
+
+    /*點擊探索*/
+    .clicksearch {
+        display: block;
+        text-align: center;
+        margin: 3%;
+    }
+
+    /*解密逃出*/
+    .escapeentrance {
+        display: block;
+        text-align: center;
+        margin: 3%;
+    }
+
+
+    .click {}
+
+
+
+    .click2 {
+        margin: auto;
+    }
+
+    /*footer*/
+    .footer {
+        background-color: #D6E1CE;
+        width: auto;
+        height: auto;
+    }
+
+    .everybody {
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+
+    }
+
+    .pandt {
+        display: flex;
+        width: auto;
+    }
+
+    .poopian {
+        margin: auto;
+        width: 20%;
+        height: auto;
+
+        border-radius: 10%;
+    }
+
+    .text {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .link {
+        display: flex;
+        background-color: #D6E1CE;
+
+    }
+
+    .list-item {
+        display: block;
+        transform: scale(1.2);
+        padding-top: 2%;
+        padding-left: 1.3%;
+        margin: auto;
+    }
+
+    .line {
+        width: 47%;
+        border: 1px solid black;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    .footer-picture {
+        display: flex;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: center;
+        margin-bottom: 3%;
+        width: 80%;
+    }
+
+    .game-name {
+        display: block;
+        width: 20%;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .dtd {
+        display: block;
+        width: 18%;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .logo {
+        display: block;
+        width: 16%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .down-footer {
+        background-color: #929A63;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 1%;
+        border-radius: 0%;
+    }
+
+
+    /*字體大小*/
+
+    .hohoho {
+        font-size: 1.5rem;
+        font-family: 'cwTeXYen', sans-serif;
+    }
+
+    .nav-list-item-link {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .nav-list-item-link-play {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .daulian {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2rem;
+
+    }
+
+    .playgame {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 5rem;
+    }
+
+    .text {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .headone {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    .headsix {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .background-text {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .click {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .click2 {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .How-to-play-text-two {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+
+    /*靖瑜*/
+    .down {
+        width: 20%;
+        height: auto;
+        background-color: #ffffff;
+        display: block;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        border-radius: 50%;
+        border: 1px solid #B0DA97;
+        z-index: 1000;
+    }
+
+    .block3 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .block5 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .block6 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .custom-carousel-container {
+        max-width: 1500px;
+        /* Set the maximum width of the carousel container */
+        margin: 2% auto;
+        /* Center the carousel on the page */
+    }
+
+    /* Custom styles for the carousel images */
+    .custom-carousel-container .carousel-item img {
+        width: 100%;
+        /* Make the images fill the container width */
+        height: 100%;
+        /* Make the images fill the container height */
+        object-fit: cover;
+        /* Maintain the aspect ratio and cover the container */
+    }
+
+    .carousel-caption {
+        background-color: aliceblue;
+        width: 8%;
+        height: 13%;
+        margin: auto;
+        margin-bottom: 2%;
+        border-radius: 30px;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 27px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+
+    }
+
+    .scenery {
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+        background-color: #f1ffe2;
+    }
+
+    .about {
+        background: #DBE5A3;
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F8FED2;
+    }
+
+    .bighead {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2% 5% 2% 0%;
+        /* 可選：調整左邊大頭貼和介紹之間的間距 */
+    }
+
+    .chen,
+    .weng {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+        /* 使圖片呈圓形 */
+        border: 3px solid #ffd77f;
+        margin: 10% 0%;
+        box-shadow: 20px 20px 2px #dfca3c9f;
+    }
+
+    .weng {
+        border: 3px solid #d4e6c4;
+        box-shadow: 20px 20px 2px #90cca8;
+    }
+
+
+
+    .chen:hover,
+    .weng:hover {
+        /* :hover 代表滑鼠移到元素上時的狀態 */
+        transform: scale(1.05);
+    }
+
+    .chen:active,
+    .weng:active {
+        /* :active是滑鼠點擊元素的狀態 */
+        transform: scale(1);
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+
+    .introduce {
+        width: 40%;
+        /* 可選：設定介紹的最大寬度 */
+        height: auto;
+        background: #fff1c5;
+        padding: 2%;
+        border-radius: 20px;
+        box-shadow: 20px 20px 2px #cf9647;
+
+    }
+
+    .introduce p {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .cattt {
+        background-color: #e1eec1;
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .catttmono {
+        background-color: white;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 2%;
+    }
+
+
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .left {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 96%;
+        margin: 5% 2%;
+        height: auto;
+        background-color: #b0d5a9;
+        border-radius: 50px;
+    }
+
+    .right img {
+        width: 10%;
+        height: auto;
+        border: 3px solid #b0d5a9;
+        margin: 5% 2%;
+        box-shadow: 5px 5px 2px #99d1a89f;
+    }
+
+    .right img:hover {
+        /* :hover 代表滑鼠移到元素上時的狀態 */
+        transform: scale(1.05);
+    }
+
+    .right img:active {
+        /* :active是滑鼠點擊元素的狀態 */
+        transform: scale(1);
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+
+
+    .leftimg {
+        height: auto;
+        width: 35%;
+        position: relative;
+    }
+
+    .catimage {
+        width: 100%;
+        height: auto;
+    }
+
+    .catintroduce {
+        margin: 5%;
+        width: 60%;
+        position: relative;
+    }
+
+    /* Additional styles for content animation */
+    #content1 h2 {
+        font-size: 6rem;
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 2px black;
+        font-family: 'cwTeXYen', sans-serif;
+    }
+
+    #content1 p {
+        font-family: 'cwTeXYen', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+    }
+
+
+
+
+
+}
+
+
+@media (min-width: 480px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /*滑動固定圖*/
+    .back-always {
+        position: fixed;
+        top: 0%;
+        z-index: -1000;
+    }
+
+    .back-always2 {
+        position: fixed;
+        bottom: 0%;
+        z-index: -1000;
+    }
+
+    /*導覽列*/
+    .nav-list {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+
+    }
+
+    .img {
+        padding: 1%;
+    }
+
+    .nav-list-item {
+        /*去除標籤*/
+        list-style: none;
+        margin: 1% 0% 0% 0%;
+
+    }
+
+    .dropdown {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .nav-list-item-link {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .nav-list-item-link:hover {
+        color: #68856b;
+    }
+
+
+
+
+    .nav-big {
+        position: relative;
+        background-color: #294672;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .hohoho {
+        display: none;
+        background-color: #a0a970;
+        min-width: 160px;
+        z-index: 1;
+        position: absolute;
+        width: 20%;
+
+        padding: 10px;
+        /* 添加一些内边距，使内容不会太靠边 */
+        z-index: 1000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .dropdown:hover .hohoho {
+        display: block;
+        /*將區塊顯示*/
+    }
+
+
+    .nav {
+        display: block;
+        width: 120%;
+        margin: 0%;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .cat:hover {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .nav:hover {
+        color: #68856b;
+    }
+
+
+
+    .searching {
+        display: flex;
+    }
+
+    .botton {
+        background-color: #68856b00;
+        border: 0;
+        margin-top: 13%;
+        height: 45px;
+    }
+
+    #search {
+        width: 100%;
+        height: 25%;
+        padding-left: 3%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        margin-top: 15%;
+        border-radius: 50px;
+        border: 2px solid rgba(110, 183, 43, 0.708);
+    }
+
+
+    .nav-list-item-link-play {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin: 20px;
+        background-color: #88B65A;
+        border: 3px solid black;
+        border-radius: 60px;
+    }
+
+    .nav-list-item-link-play:hover {
+        background-color: rgba(246, 208, 40, 0.637);
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-list-item-link-play:active {
+        box-shadow: 3px 3px 10px 3px inset;
+    }
+
+    .nav-list-item-link-play:active:hover {
+        color: rgba(181, 181, 3, 0.655);
+    }
+
+
+    /*立即開始*/
+    .computer {
+        display: block;
+        background-color: #ff6b6b;
+        margin: auto;
+        border-radius: 30px;
+        color: white;
+
+    }
+
+    .block1 {
+        background-color: #c5eead;
+    }
+
+    .big-logo-center {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .big-logo {
+        width: 50%;
+        height: auto;
+        margin-top: 1%;
+        filter: saturate(120%);
+    }
+
+    .start {
+        width: 100%;
+    }
+
+
+
+
+    /*背景故事*/
+    .block2 {
+        margin-top: 3%;
+    }
+
+    .background-text {
+        position: absolute;
+        text-align: center;
+        width: 60%;
+        max-height: 20%;
+        overflow: hidden;
+        /* 隐藏溢出部分 */
+        background-color: #f4f6f3;
+        border-radius: 20px;
+        padding: 5%;
+        margin: 20% 20% 0 20%;
+        opacity: 1;
+        overflow-y: auto;
+        /* 使用滚动条处理溢出内容 */
+    }
+
+
+    /*.background-text:hover {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease-out;
+        box-shadow: 0px 0px 15px 10px #d3e2c4;
+        overflow: hidden;
+
+    }*/
+
+    .background-page {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .title {
+        position: absolute;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .headone {
+        text-align: center;
+    }
+
+    .headsix {
+        text-align: center;
+    }
+
+    /*遊玩方式*/
+    .block4 {
+        margin-top: 3%;
+        background-color: #e6e4ad;
+        padding-bottom: 3%;
+
+    }
+
+
+    .How-to-play-play {
+        background-color: #EFF986;
+    }
+
+    .gif-picture {
+        width: 100%;
+        border-radius: 15%;
+        transition: all 0.5s ease-out;
+        box-shadow: 3px 3px 10px 3px;
+        overflow: hidden;
+        margin-bottom: 10%;
+    }
+
+    .allgif {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /*地圖切換*/
+    .mapchange {
+        display: block;
+        text-align: center;
+        margin: 3%;
+    }
+
+    /*點擊探索*/
+    .clicksearch {
+        display: block;
+        text-align: center;
+        margin: 3%;
+    }
+
+    /*解密逃出*/
+    .escapeentrance {
+        display: block;
+        text-align: center;
+        margin: 3%;
+    }
+
+
+    .click {}
+
+
+
+    .click2 {
+        margin: auto;
+    }
+
+    /*footer*/
+    .footer {
+        background-color: #D6E1CE;
+        width: auto;
+        height: auto;
+    }
+
+
+    .everybody {
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+
+    }
+
+    .everybody-can-play {
+        margin: 0;
+    }
+
+    .pandt {
+        display: flex;
+        width: 100%;
+    }
+
+    .poopian {
+
+        width: 5%;
+        height: auto;
+        margin: 5%;
+        border-radius: 10%;
+    }
+
+    .text {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .link {
+        display: flex;
+        background-color: #D6E1CE;
+
+    }
+
+    --- .everybody {
+        display: flex;
+        margin-bottom: 2%;
+        margin-left: 10%;
+    }
+
+
+
+    .poopian {
+
+        width: 20%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .text {
+        margin-top: 3%;
+        width: auto;
+        margin-left: 3%;
+    }
+
+    .link {
+        display: flex;
+        background-color: #D6E1CE;
+        margin: 5%;
+    }
+
+    .list-item {
+        display: block;
+        transform: scale(1.2);
+        padding-top: 2%;
+        padding-left: 1.3%;
+        margin-left: 10%;
+    }
+
+    .line {
+        width: 47%;
+        border: 1px solid black;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    .footer-picture {
+        display: flex;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: center;
+        margin-bottom: 3%;
+        width: 80%;
+    }
+
+    .game-name {
+        display: block;
+        width: 20%;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .dtd {
+        display: block;
+        width: 18%;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .logo {
+        display: block;
+        width: 16%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .down-footer {
+        background-color: #929A63;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 1%;
+        border-radius: 0%;
+    }
+
+
+    /*字體大小*/
+    .computer {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .nav-list-item-link {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .nav-list-item-link-play {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .daulian {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2rem;
+
+    }
+
+    .playgame {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 5rem;
+    }
+
+    .text {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .headone {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    .headsix {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .background-text {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .click {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .click2 {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .How-to-play-text-two {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+
+    /*靖瑜*/
+    .down {
+        width: 8%;
+        height: auto;
+        background-color: #ffffff;
+        display: block;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        border-radius: 50%;
+        border: 1px solid #B0DA97;
+        z-index: 1000;
+    }
+
+    .block3 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .block5 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .block6 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .custom-carousel-container {
+        max-width: 1500px;
+        /* Set the maximum width of the carousel container */
+        margin: 2% auto;
+        /* Center the carousel on the page */
+    }
+
+    /* Custom styles for the carousel images */
+    .custom-carousel-container .carousel-item img {
+        width: 100%;
+        /* Make the images fill the container width */
+        height: 100%;
+        /* Make the images fill the container height */
+        object-fit: cover;
+        /* Maintain the aspect ratio and cover the container */
+    }
+
+    .carousel-caption {
+        background-color: aliceblue;
+        width: 8%;
+        height: 13%;
+        margin: auto;
+        margin-bottom: 2%;
+        border-radius: 30px;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 27px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+
+    }
+
+    .scenery {
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+        background-color: #f1ffe2;
+    }
+
+    .about {
+        background: #DBE5A3;
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F8FED2;
+    }
+
+    .bighead {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2% 5% 2% 0%;
+        /* 可選：調整左邊大頭貼和介紹之間的間距 */
+    }
+
+    .chen,
+    .weng {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+        /* 使圖片呈圓形 */
+        border: 3px solid #ffd77f;
+        margin: 10% 0%;
+        box-shadow: 20px 20px 2px #dfca3c9f;
+    }
+
+    .weng {
+        border: 3px solid #d4e6c4;
+        box-shadow: 20px 20px 2px #90cca8;
+    }
+
+
+
+    .chen:hover,
+    .weng:hover {
+        /* :hover 代表滑鼠移到元素上時的狀態 */
+        transform: scale(1.05);
+    }
+
+    .chen:active,
+    .weng:active {
+        /* :active是滑鼠點擊元素的狀態 */
+        transform: scale(1);
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+
+    .introduce {
+        width: 40%;
+        /* 可選：設定介紹的最大寬度 */
+        height: auto;
+        background: #fff1c5;
+        padding: 2%;
+        border-radius: 20px;
+        box-shadow: 20px 20px 2px #cf9647;
+
+    }
+
+    .introduce p {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .cattt {
+        background-color: #e1eec1;
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .catttmono {
+        background-color: white;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 2%;
+    }
+
+
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .left {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 96%;
+        margin: 5% 2%;
+        height: auto;
+        background-color: #b0d5a9;
+        border-radius: 50px;
+    }
+
+    .right img {
+        width: 10%;
+        height: auto;
+        border: 3px solid #b0d5a9;
+        margin: 5% 2%;
+        box-shadow: 5px 5px 2px #99d1a89f;
+    }
+
+    .right img:hover {
+        /* :hover 代表滑鼠移到元素上時的狀態 */
+        transform: scale(1.05);
+    }
+
+    .right img:active {
+        /* :active是滑鼠點擊元素的狀態 */
+        transform: scale(1);
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+
+
+    .leftimg {
+        height: auto;
+        width: 35%;
+        position: relative;
+    }
+
+    .catimage {
+        width: 100%;
+        height: auto;
+    }
+
+    .catintroduce {
+        margin: 5%;
+        width: 60%;
+        position: relative;
+    }
+
+    /* Additional styles for content animation */
+    #content1 h2 {
+        font-size: 6rem;
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 2px black;
+        font-family: 'cwTeXYen', sans-serif;
+    }
+
+    #content1 p {
+        font-family: 'cwTeXYen', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+    }
+
+
+
+
+}
+
+
+@media (min-width: 1024px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /*滑動固定圖*/
+    .back-always {
+        position: fixed;
+        top: 0%;
+        z-index: -1000;
+    }
+
+    .back-always2 {
+        position: fixed;
+        bottom: 0%;
+        z-index: -1000;
+    }
+
+    /*漢堡選單*/
+    .menu {
+        display: none;
+    }
+
+    /*導覽列*/
+    .nav-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+
+    }
+
+    .img {
+        padding: 1%;
+    }
+
+    .nav-list-item {
+        /*去除標籤*/
+        list-style: none;
+        margin: 1% 0% 0% 0%;
+
+    }
+
+    .dropdown {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .nav-list-item-link {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .nav-list-item-link:hover {
+        color: #68856b;
+    }
+
+
+
+
+    .nav-big {
+        position: relative;
+        background-color: #c8d387;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .hohoho {
+        display: none;
+        background-color: #a0a970;
+        min-width: 160px;
+        z-index: 1;
+        position: absolute;
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        /* 添加一些内边距，使内容不会太靠边 */
+        z-index: 1000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+    }
+
+    .dropdown:hover .hohoho {
+        display: block;
+        /*將區塊顯示*/
+    }
+
+
+    .nav {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 2%;
+        color: #FFFFFF;
+        width: auto;
+    }
+
+    .gintro {
+        margin: auto;
+    }
+
+    .cat:hover {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .nav:hover {
+        color: #68856b;
+    }
+
+
+
+
+    .searching {
+        display: flex;
+    }
+
+    .botton {
+        background-color: #68856b00;
+        border: 0;
+        margin-top: 13%;
+        height: 45px;
+    }
+
+    #search {
+        width: 100%;
+        height: 25%;
+        padding-left: 3%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        margin-top: 15%;
+        border-radius: 50px;
+        border: 2px solid rgba(110, 183, 43, 0.708);
+    }
+
+
+    .nav-list-item-link-play {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        margin: 20px;
+        background-color: #88B65A;
+        border: 3px solid black;
+        border-radius: 60px;
+    }
+
+    .nav-list-item-link-play:hover {
+        background-color: rgba(246, 208, 40, 0.637);
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-list-item-link-play:active {
+        box-shadow: 3px 3px 10px 3px inset;
+    }
+
+    .nav-list-item-link-play:active:hover {
+        color: rgba(181, 181, 3, 0.655);
+    }
+
+    /*立即開始*/
+
+    .computer {
+        display: none;
+    }
+
+    .block1 {
+        background-color: #c5eead;
+    }
+
+    .big-logo-center {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .big-logo {
+        width: 50%;
+        height: auto;
+        margin-top: 1%;
+        filter: saturate(120%);
+    }
+
+    .start {
+        width: 100%;
+        height: auto;
+    }
+
+    .playgame {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #88B65A;
+        border: 3px solid black;
+        border-radius: 60px;
+        width: 30%;
+        position: absolute;
+        text-align: center;
+        margin: 37% 35% 0 35%;
+        padding: 2% 0 2% 0;
+        box-shadow: 0px 0px 0px 1px;
+    }
+
+    .playgame:hover {
+        background-color: rgba(246, 208, 40, 0.637);
+        color: rgb(255, 255, 255);
+    }
+
+    .playgame:active {
+        box-shadow: 3px 3px 10px 3px inset;
+    }
+
+    .playgame:active:hover {
+        color: rgba(181, 181, 3, 0.655);
+    }
+
+    .word {
+        display: block;
+    }
+
+
+    /*RWD導覽列*/
+
+
+
+
+    /*背景故事*/
+    .block2 {
+        margin-top: 3%;
+    }
+
+    .background-text {
+        position: absolute;
+        text-align: center;
+        width: 60%;
+
+        max-height: 400px;
+        overflow: hidden;
+        /* 隐藏溢出部分 */
+        background-color: #f4f6f3;
+        border-radius: 20px;
+        padding: 5%;
+        margin: 15% 20% 0 20%;
+
+        overflow-y: auto;
+        opacity: 0.6;
+        transition: all 0.5s ease-out;
+        /* 使用滚动条处理溢出内容 */
+    }
+
+    .background-text:hover {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease-out;
+        box-shadow: 0px 0px 15px 10px #d3e2c4;
+        overflow: hidden;
+
+    }
+
+    .background-page {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .title {
+        position: absolute;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .headone {
+        text-align: center;
+    }
+
+    .headsix {
+        text-align: center;
+    }
+
+    /*遊玩方式*/
+    .block4 {
+        margin-top: 3%;
+        background-color: #e6e4ad;
+        padding-bottom: 3%;
+
+    }
+
+
+    .How-to-play-play {
+        background-color: #EFF986;
+    }
+
+    .gif {
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin: auto;
+        padding-top: 3%;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .gif-picture {
+        border-radius: 15%;
+        transition: all 0.5s ease-out;
+        box-shadow: 3px 3px 10px 3px;
+        overflow: hidden;
+
+    }
+
+    .gif-picture:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease-out;
+    }
+
+    .How-to-play-text {
+        display: flex;
+        display: flex;
+        width: 79%;
+        height: auto;
+        margin: auto;
+        padding-top: 1%;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .click {
+        margin: auto;
+    }
+
+    .How-to-play-text-two {
+        display: flex;
+        display: flex;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 3%;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .click2 {
+        margin: auto;
+    }
+
+    /*footer*/
+    .footer {
+        background-color: #D6E1CE;
+        width: auto;
+        height: auto;
+    }
+
+    .everybody {
+        display: flex;
+        flex-direction: row;
+        margin: 5% 20%;
+        padding-top: 2%;
+    }
+
+    .pandt {
+        display: flex;
+        width: 60%;
+    }
+
+    .everybody-can-play {
+        margin-top: 1%;
+    }
+
+    .poopian {
+
+        width: 20%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .text {
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 3%;
+    }
+
+    .link {
+        display: flex;
+        background-color: #D6E1CE;
+        width: auto;
+        margin: 0;
+    }
+
+    .list-item {
+        display: block;
+        transform: scale(1.2);
+        padding-top: 2%;
+        padding-left: 1.3%;
+        margin-left: 8%;
+    }
+
+    .line {
+        width: 47%;
+        border: 1px solid black;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    .footer-picture {
+        display: flex;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: center;
+        margin-bottom: 3%;
+        width: 80%;
+    }
+
+    .game-name {
+        display: block;
+        width: 20%;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .dtd {
+        display: block;
+        width: 18%;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .logo {
+        display: block;
+        width: 16%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .down-footer {
+        background-color: #929A63;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 1%;
+        border-radius: 0%;
+    }
+
+
+    /*字體大小*/
+    .nav {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .nav-list-item-link {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2rem;
+    }
+
+    .nav-list-item-link-play {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .daulian {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2rem;
+
+    }
+
+    .playgame {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 5rem;
+    }
+
+    .text {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1rem;
+    }
+
+    .headone {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 4rem;
+    }
+
+    .headsix {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1em;
+    }
+
+    .background-text {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2.2vw;
+    }
+
+    .click {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 2.2rem;
+    }
+
+    .click2 {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .How-to-play-text-two {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+
+    /*靖瑜*/
+    .down {
+        width: 8%;
+        height: auto;
+        background-color: #ffffff;
+        display: block;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        border-radius: 50%;
+        border: 1px solid #B0DA97;
+        z-index: 1000;
+    }
+
+    .block3 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .block5 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .block6 {
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .custom-carousel-container {
+        max-width: 1500px;
+        /* Set the maximum width of the carousel container */
+        margin: 2% auto;
+        /* Center the carousel on the page */
+    }
+
+    /* Custom styles for the carousel images */
+    .custom-carousel-container .carousel-item img {
+        width: 100%;
+        /* Make the images fill the container width */
+        height: 100%;
+        /* Make the images fill the container height */
+        object-fit: cover;
+        /* Maintain the aspect ratio and cover the container */
+    }
+
+    .carousel-caption {
+        background-color: aliceblue;
+        width: 8%;
+        height: 13%;
+        margin: auto;
+        margin-bottom: 2%;
+        border-radius: 30px;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 27px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+
+    }
+
+    .scenery {
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+        background-color: #f1ffe2;
+    }
+
+    .about {
+        background: #DBE5A3;
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F8FED2;
+    }
+
+    .bighead {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2% 5% 2% 0%;
+        /* 可選：調整左邊大頭貼和介紹之間的間距 */
+    }
+
+    .chen,
+    .weng {
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+        /* 使圖片呈圓形 */
+        border: 3px solid #ffd77f;
+        margin: 10% 0%;
+        box-shadow: 20px 20px 2px #dfca3c9f;
+    }
+
+    .weng {
+        border: 3px solid #d4e6c4;
+        box-shadow: 20px 20px 2px #90cca8;
+    }
+
+
+
+    .chen:hover,
+    .weng:hover {
+        /* :hover 代表滑鼠移到元素上時的狀態 */
+        transform: scale(1.05);
+    }
+
+    .chen:active,
+    .weng:active {
+        /* :active是滑鼠點擊元素的狀態 */
+        transform: scale(1);
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+
+    .introduce {
+        width: 40%;
+        /* 可選：設定介紹的最大寬度 */
+        height: auto;
+        background: #fff1c5;
+        padding: 2%;
+        border-radius: 20px;
+        box-shadow: 20px 20px 2px #cf9647;
+
+    }
+
+    .introduce p {
+        font-family: 'cwTeXYen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .cattt {
+        background-color: #e1eec1;
+        display: flex;
+        flex-direction: column;
+        /* 將子元素在垂直方向排列 */
+        justify-content: center;
+        align-items: center;
+        font-family: 'cwTeXYen', sans-serif;
+        border: 1px solid #000;
+        /* 1像素寬，黑色邊框 */
+        padding: 10px;
+        /* 可選：增加內邊距，使內容離邊框有些距離 */
+    }
+
+    .catttmono {
+        background-color: white;
+        display: flex;
+        width: 100%;
+        height: 600px;
+        margin: 0;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .left {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 2% 3%;
+        height: auto;
+        background-color: #b0d5a9;
+        border-radius: 50px;
+    }
+
+    .right img {
+        width: 40%;
+        height: auto;
+        border: 3px solid #b0d5a9;
+        margin: 5% 2%;
+        box-shadow: 10px 10px 2px #99d1a89f;
+    }
+
+    .right img:hover {
+        /* :hover 代表滑鼠移到元素上時的狀態 */
+        transform: scale(1.05);
+    }
+
+    .right img:active {
+        /* :active是滑鼠點擊元素的狀態 */
+        transform: scale(1);
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+
+
+    .leftimg {
+        height: auto;
+        width: 35%;
+        position: relative;
+    }
+
+    .catimage {
+        width: 100%;
+        height: auto;
+    }
+
+    .catintroduce {
+        margin: 5%;
+        width: 60%;
+        position: relative;
+    }
+
+
+    /*test*/
+
+    /* Additional styles for content animation */
+    #content1 h2 {
+        font-size: 8rem;
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 3px black;
+        font-family: 'cwTeXYen', sans-serif;
+    }
+
+    #content1 p {
+        font-family: 'cwTeXYen', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+
+/*RWD平板頁*/

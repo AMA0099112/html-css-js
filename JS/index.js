@@ -1,64 +1,163 @@
+/*$(document).ready(function () {
+    $("#menu").click(function () {
+        $("#allnav2").toggle();
+    });
+    $(document).on('click', function (event) {
+
+        if (!$("#allnav2").is(event.target) && !$("#menu").is(event.target)) {
+            navContainer.hide();
+        }
+    });
+
+});*/
 $(document).ready(function () {
-    //查詢打進去的值
-    $("#search").on("keyup", function () {
-        //抓搜尋的關鍵字
-        var value = $(this).val().toLowerCase();//大小寫都可用
-        //抓網頁裡有沒有符合
-        $(".block").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
+    // 点击导航图标显示/隐藏导航列
+    $('#menuimg').on('click', function () {
+        $('#RWDnav').toggle();
     });
 
-    //test
-    const firebaseConfig = {
-        apiKey: "AIzaSyB30VfIVqhTJBbhBwAmedBFd18J7xtapqo",
-        authDomain: "final-37839.firebaseapp.com",
-        databaseURL: "https://final-37839-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "final-37839",
-        storageBucket: "final-37839.appspot.com",
-        messagingSenderId: "16625538397",
-        appId: "1:16625538397:web:7881b1e4b9d2ddf0e5c4b4",
-        measurementId: "G-JT3H0YMPMC"
-    };
+    // 点击页面其他地方隐藏导航列
+    $(document).on('click', function (event) {
+        var navContainer = $('#RWDnav');
+        var navIcon = $('#menuimg');
 
-    firebase.initializeApp(firebaseConfig);
-
-    // 获取实时数据库引用
-    const database = firebase.database();
-
-    // 获取表单和留言列表
-    const messageForm = $('#message-form');
-    const messagesList = $('#messages');
-
-    // 监听留言表单提交事件
-    messageForm.submit(function (e) {
-        e.preventDefault();
-
-        // 获取输入的姓名和留言
-        const name = $('#name').val();
-        const message = $('#message').val();
-
-        // 将留言添加到数据库
-        database.ref('messages').push({
-            name: name,
-            message: message
-        });
-
-        // 清空表单
-        messageForm[0].reset();
+        // 判断点击事件的目标元素是否在导航列以外
+        if (!navContainer.is(event.target) && !navIcon.is(event.target) && navContainer.has(event.target).length === 0) {
+            navContainer.hide();
+        }
     });
 
-    // 监听实时数据库变化，更新留言列表
-    database.ref('messages').on('value', function (snapshot) {
-        messagesList.empty(); // 清空留言列表
+    document.querySelector('.background-text').addEventListener('wheel', function (e) {
+        var element = this;
+        // 计算滚动的距离
+        var delta = e.deltaY || e.detail || e.wheelDelta;
 
-        // 遍历每条留言
-        snapshot.forEach(function (childSnapshot) {
-            const messageData = childSnapshot.val();
-            const li = $('<li>').text(`${messageData.name}: ${messageData.message}`);
-            messagesList.append(li);
-        });
+        // 如果已经滚动到底部，阻止默认滚动行为，继续整个页面的滚动
+        if (element.scrollHeight - element.clientHeight <= element.scrollTop && delta > 0) {
+            e.preventDefault();
+            window.scrollBy(0, delta);
+        } else if (element.scrollTop === 0 && delta < 0) {
+            // 如果已经滚动到顶部，阻止默认滚动行为，继续整个页面的滚动
+            e.preventDefault();
+            window.scrollBy(0, delta);
+        }
     });
-
 });
 
+
+
+
+
+
+$(document).ready(function () {
+
+    const introduceContent = $('.introduce');
+    // 添加點擊事件處理器
+    $("#chen").click(function () {
+
+        $("#introduce").fadeOut(function () {
+            $("#introduce").html(`
+              <p>姓名：陳怡蒨</p>
+              <p>性別：女</p>
+              <p>專長：彈吉他</p>
+              <p>心得感想：肝悲</p>
+            `).css({
+                'background-color': '#fff1c5',
+                'box-shadow': '20px 20px 2px #cf9647'
+            }).fadeIn();
+        });
+        // 更改 introduce 內容，例如：這裡假設為陳先生的介紹
+    });
+
+    $("#weng").click(function () {
+        // 更改 introduce 內容，例如：這裡假設為翁先生的介紹
+        $("#introduce").fadeOut(function () {
+            $("#introduce").html(`
+          <p>姓名：翁靖瑜</p>
+          <p>性別：女</p>
+          <p>專長：睡覺</p>
+          <p>心得感想：ぴえん</p>
+        `).css({
+                'background-color': '#ddfccd',
+                'box-shadow': '20px 20px 2px #b0d5a9'
+            }).fadeIn();
+        });
+    });
+
+
+    //Test
+    $(window).scroll(function () {
+        // 获取触发动画的元素
+        var animatedElement = $('#cattt');
+
+        // 获取元素的位置信息
+        var rect = animatedElement[0].getBoundingClientRect();
+        var windowHeight = $(window).height();
+
+        // 如果元素底边进入视口，则添加动画类
+        if (rect.bottom <= windowHeight) {
+            /*    $("#left").hide();
+                $("#left").css('left', '-100%');
+                $("#left").show();
+                $("#left").animate({ left: "0%" }, 1500);*/
+            if (!animatedElement.hasClass('animating') && !animatedElement.hasClass('already')) {
+                setTimeout(function () {
+                    $("#ai").click();
+                }, 100);
+                $('#cattt').addClass('already');
+            }
+        }
+    });
+    $('.thumbnail').click(function () {
+        var animatedElement = $('#cattt');
+        var image = $(this).data('image');
+        var title = $(this).data('title');
+        var description = $(this).data('description');
+        var additional = $(this).data('additional');
+
+        if (!animatedElement.hasClass('animating')) {
+
+            $('#cattt').addClass('animating');
+
+            $("#left").hide();
+            $("#left").css('left', '-100%');
+            $("#left").show();
+            $("#left").animate({ left: "0%" }, 1500, function () {
+                // 動畫結束後移除class
+                $('#cattt').removeClass('animating');
+            });
+
+            $('#image1').attr('src', image);
+            $('#content1').html(`
+            <h2>${title}</h2>
+            <p>${description}</p>
+            <p class="additionalContent">${additional}</p>
+          `);
+
+
+        }
+
+    })
+
+    $(window).scroll(function () {
+        // 获取触发动画的元素
+        var animatedElement = $('#footer');
+
+        // 获取元素的位置信息
+        var rect = animatedElement[0].getBoundingClientRect();
+        var windowHeight = $(window).height();
+
+        // 如果元素底边进入视口，则添加动画类
+        if (rect.bottom <= windowHeight) {
+            $("#down").fadeOut();
+        }
+        else {
+            $("#down").fadeIn();
+        }
+
+    });
+
+
+
+
+})
