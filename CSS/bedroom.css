@@ -182,10 +182,11 @@ body {
 .cat-cold {
     position: fixed;
     display: block;
-    width: 70%;
-    height: 85%;
-    top: 90%;
-    left: 3%;
+    width: 30%;
+    height: auto;
+    top: 95%;
+    left: 30%;
+    z-index: 100;
 }
 
 .rec {
