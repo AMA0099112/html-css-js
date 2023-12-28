@@ -71,7 +71,7 @@ $(document).ready(function () {
               <p>姓名：陳怡蒨</p>
               <p>性別：女</p>
               <p>專長：彈吉他</p>
-              <p>心得感想：肝悲</p>
+              <p>心得感想：肝悲乾杯</p>
             `).css({
                 'background-color': '#fff1c5',
                 'box-shadow': '5px 5px 2px #cf9647'
