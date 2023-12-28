@@ -9,12 +9,12 @@ $(document).ready(function () {
 
     $("#aircon-off").click(function () {
         $("#aircon-on").toggle();
-        $("#cat-cold").animate({ top: "30%" }, 1000);
+        $("#cat-cold").animate({ top: "40%" }, 1000);
     });
 
     $("#aircon-on").click(function () {
         $("#aircon-on").toggle();
-        $("#cat-cold").animate({ top: "90%" }, 1000);
+        $("#cat-cold").animate({ top: "95%" }, 1000);
     });
 
     $("#chair1").click(function () {
